@@ -1,0 +1,37 @@
+{
+  "competition": {
+    "id": "kkd",
+    "name": "Keuken Kampioen Divisie",
+    "season": "2026/27",
+    "logo": null
+  },
+  "teams": [
+    { "id": "almere",      "name": "Almere City",       "city": "Almere",     "crest": null },
+    { "id": "jong-az",     "name": "Jong AZ",          "city": "Alkmaar",    "crest": "images/crest/az.png" },
+    { "id": "den-bosch",   "name": "FC Den Bosch",     "city": "Den Bosch",  "crest": null },
+    { "id": "dordrecht",   "name": "FC Dordrecht",     "city": "Dordrecht",  "crest": null },
+    { "id": "emmen",       "name": "FC Emmen",         "city": "Emmen",      "crest": null },
+    { "id": "fc-eindhoven","name": "FC Eindhoven",     "city": "Eindhoven",  "crest": null },
+    { "id": "volendam",    "name": "FC Volendam",      "city": "Volendam",  "crest": null },
+    { "id": "helmond",     "name": "Helmond Sport",    "city": "Helmond",    "crest": null },
+    { "id": "jong-ajax",   "name": "Jong Ajax",       "city": "Amsterdam",  "crest": "images/crest/ajax.png" },
+    { "id": "jong-psv",    "name": "Jong PSV",         "city": "Eindhoven",  "crest": "images/crest/psv.png" },
+    { "id": "maastricht",  "name": "MVV Maastricht",   "city": "Maastricht", "crest": null },
+    { "id": "nac",         "name": "NAC Breda",        "city": "Breda",      "crest": "images/crest/nac.png" },
+    { "id": "rkc",         "name": "RKC Waalwijk",     "city": "Waalwijk",   "crest": null },
+    { "id": "roda",        "name": "Roda JC",          "city": "Kerkrade",   "crest": null },
+    { "id": "top-oss",     "name": "TOP Oss",          "city": "Oss",        "crest": null }
+  ],
+  "fixtures": [
+    { "date": "2025-08-08T19:00:00", "homeTeam": "nac",         "awayTeam": "willem2",    "competition": "Keuken Kampioen Divisie", "venue": "Rat Verlegh Stadion" },
+    { "date": "2025-08-08T19:00:00", "homeTeam": "volendam",    "awayTeam": "emmen",      "competition": "Keuken Kampioen Divisie", "venue": "Kras Stadion" },
+    { "date": "2025-08-09T15:00:00", "homeTeam": "roda",        "awayTeam": "ado",        "competition": "Keuken Kampioen Divisie", "venue": "Parkstad Limburg Stadion" },
+    { "date": "2025-08-09T15:00:00", "homeTeam": "telstar",     "awayTeam": "jong-ajax",  "competition": "Keuken Kampioen Divisie", "venue": "Rabobank IJmond Stadion" },
+    { "date": "2025-08-09T15:00:00", "homeTeam": "dordrecht",   "awayTeam": "maastricht", "competition": "Keuken Kampioen Divisie", "venue": "Riwal Hoogwerkers Stadion" },
+    { "date": "2025-08-09T15:00:00", "homeTeam": "cambuur",     "awayTeam": "almere",     "competition": "Keuken Kampioen Divisie", "venue": "Cambuur Stadion" },
+    { "date": "2025-08-15T19:00:00", "homeTeam": "jong-psv",    "awayTeam": "jong-az",    "competition": "Keuken Kampioen Divisie", "venue": "PSV Trainingscomplex" },
+    { "date": "2025-08-15T19:00:00", "homeTeam": "fc-eindhoven","awayTeam": "helmond",    "competition": "Keuken Kampioen Divisie", "venue": "Jan Louwers Stadion" },
+    { "date": "2025-08-16T15:00:00", "homeTeam": "top-oss",     "awayTeam": "den-bosch",  "competition": "Keuken Kampioen Divisie", "venue": "Frans Heesen Stadion" },
+    { "date": "2025-08-16T15:00:00", "homeTeam": "veendam",     "awayTeam": "rkc",        "competition": "Keuken Kampioen Divisie", "venue": "Zuidenveld" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "competition": {
+    "id": "vrouwen",
+    "name": "Eredivisie Vrouwen",
+    "season": "2026/27",
+    "logo": null
+  },
+  "teams": [
+    { "id": "ajax-v",      "name": "Ajax",             "city": "Amsterdam",  "crest": "/images/crest/ajax.png" },
+    { "id": "psv-v",       "name": "PSV",              "city": "Eindhoven",  "crest": "/images/crest/psv.png" },
+    { "id": "twente-v",    "name": "FC Twente",         "city": "Enschede",   "crest": "/images/crest/twente.png" },
+    { "id": "az-v",        "name": "AZ",               "city": "Alkmaar",    "crest": "/images/crest/az.png" },
+    { "id": "feyenoord-v", "name": "Feyenoord",        "city": "Rotterdam",  "crest": "/images/crest/feyenoord.png" },
+    { "id": "excelsior-v", "name": "Excelsior",        "city": "Rotterdam",  "crest": "/images/crest/excelsior.png" },
+    { "id": "ado-v",       "name": "ADO Den Haag",     "city": "Den Haag",   "crest": "/images/crest/ado.png" },
+    { "id": "nac-v",       "name": "NAC Breda",        "city": "Breda",      "crest": "/images/crest/nac.png" },
+    { "id": "heerenveen-v","name": "SC Heerenveen",    "city": "Heerenveen", "crest": "/images/crest/heerenveen.png" },
+    { "id": "fortuna-v",   "name": "Fortuna Sittard",  "city": "Sittard",    "crest": "/images/crest/fortuna.png" },
+    { "id": "hera",        "name": "Hera United",      "city": "Alkmaar",    "crest": "/images/crest/hera.png" },
+    { "id": "utrecht-v",   "name": "FC Utrecht",       "city": "Utrecht",    "crest": "/images/crest/utrecht.png" }
+  ],
+  "fixtures": [
+    { "date": "2025-08-10T13:00:00", "homeTeam": "ajax-v",      "awayTeam": "psv-v",       "competition": "Eredivisie Vrouwen", "venue": "Sportpark De Toekomst" },
+    { "date": "2025-08-10T13:00:00", "homeTeam": "twente-v",    "awayTeam": "az-v",        "competition": "Eredivisie Vrouwen", "venue": "De Grolsch Veste" },
+    { "date": "2025-08-10T13:00:00", "homeTeam": "feyenoord-v", "awayTeam": "excelsior-v", "competition": "Eredivisie Vrouwen", "venue": "Varkenoord" },
+    { "date": "2025-08-10T13:00:00", "homeTeam": "ado-v",       "awayTeam": "nac-v",       "competition": "Eredivisie Vrouwen", "venue": "Cars Jeans Stadion" },
+    { "date": "2025-08-10T13:00:00", "homeTeam": "heerenveen-v","awayTeam": "fortuna-v",   "competition": "Eredivisie Vrouwen", "venue": "Abe Lenstra Stadion" },
+    { "date": "2025-08-10T13:00:00", "homeTeam": "hera",        "awayTeam": "utrecht-v",   "competition": "Eredivisie Vrouwen", "venue": "AFAS Stadion" },
+    { "date": "2025-08-17T13:00:00", "homeTeam": "psv-v",       "awayTeam": "twente-v",    "competition": "Eredivisie Vrouwen", "venue": "Philips Stadion" },
+    { "date": "2025-08-17T13:00:00", "homeTeam": "az-v",        "awayTeam": "feyenoord-v", "competition": "Eredivisie Vrouwen", "venue": "AFAS Stadion" },
+    { "date": "2025-08-17T13:00:00", "homeTeam": "excelsior-v", "awayTeam": "heerenveen-v","competition": "Eredivisie Vrouwen", "venue": "Van Donge en De Roo Stadion" },
+    { "date": "2025-08-17T13:00:00", "homeTeam": "nac-v",       "awayTeam": "ajax-v",      "competition": "Eredivisie Vrouwen", "venue": "Rat Verlegh Stadion" }
+  ]
+}

@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voetbalkalender</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green:        #00e676;
+    --green-dark:   #00b248;
+    --green-dim:    rgba(0,230,118,0.08);
+    --dark:         #0d1a0f;
+    --surface:      #111a12;
+    --card:         #162219;
+    --card-hover:   #1b2a1c;
+    --border:       #243828;
+    --border-light: #2e4832;
+    --text:         #e8f5e9;
+    --muted:        #4a6b4e;
+    --muted-light:  #7a9e7e;
+    --accent:       #ffeb3b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* pitch stripe texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 59px,
+      rgba(0,230,118,0.018) 59px,
+      rgba(0,230,118,0.018) 60px
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 52px 24px 100px;
+  }
+
+  /* ── HEADER ─────────────────────────────────── */
+  header {
+    margin-bottom: 64px;
+    animation: fadeDown .65s ease both;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green);
+    color: var(--dark);
+    padding: 5px 16px;
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(58px, 12vw, 110px);
+    line-height: .91;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0 0 80px rgba(0,230,118,.25);
+  }
+
+  h1 span {
+    color: var(--green);
+    display: block;
+  }
+
+  .tagline {
+    margin-top: 18px;
+    color: var(--muted-light);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.65;
+    max-width: 460px;
+  }
+
+  /* ── STEP LABEL ─────────────────────────────── */
+  .step-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .step-num {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--green);
+    color: var(--dark);
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--muted-light);
+  }
+
+  /* ── COMPETITION TABS ───────────────────────── */
+  .comp-tabs {
+    display: flex;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 4px;
+    gap: 4px;
+    margin-bottom: 40px;
+    animation: fadeUp .5s .1s ease both;
+    overflow-x: auto;
+  }
+
+  .comp-tab {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 10px;
+    border-radius: 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    transition: all .2s;
+  }
+
+  .comp-tab .t-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted-light);
+    white-space: nowrap;
+    transition: color .2s;
+  }
+
+  .comp-tab .t-sub {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 2px;
+    white-space: nowrap;
+  }
+
+  .comp-tab.active {
+    background: var(--green);
+  }
+
+  .comp-tab.active .t-name { color: var(--dark); font-weight: 700; }
+  .comp-tab.active .t-sub  { color: rgba(13,26,15,.6); }
+
+  .comp-tab:not(.active):hover { background: var(--card-hover); }
+  .comp-tab:not(.active):hover .t-name { color: var(--text); }
+
+  /* ── CLUBS ──────────────────────────────────── */
+  .clubs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(152px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+    animation: fadeUp .45s .15s ease both;
+  }
+
+  .club-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 14px 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .22s cubic-bezier(.34,1.56,.64,1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .club-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,230,118,.07), transparent);
+    opacity: 0;
+    transition: opacity .2s;
+    pointer-events: none;
+  }
+
+  .club-card:hover {
+    border-color: rgba(0,230,118,.35);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0,0,0,.35);
+  }
+
+  .club-card:hover::after { opacity: 1; }
+
+  .club-card.selected {
+    border-color: var(--green);
+    background: var(--green-dim);
+    box-shadow: 0 0 0 1px var(--green), 0 8px 28px rgba(0,230,118,.14);
+    transform: translateY(-3px);
+  }
+
+  .club-card.selected::after { opacity: 1; }
+
+  .club-crest {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .club-crest img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,.55));
+  }
+
+  .club-crest-fb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .club-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .club-city {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+
+  .club-check {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--green);
+    color: var(--dark);
+    font-size: 10px;
+    font-weight: 700;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .club-card.selected .club-check { display: flex; }
+
+  /* ── FILTER SWITCH ──────────────────────────── */
+  .filter-bar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px 18px;
+    margin-bottom: 16px;
+    animation: fadeUp .35s ease both;
+    flex-wrap: wrap;
+  }
+
+  .filter-bar.visible { display: flex; }
+
+  .filter-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted-light);
+  }
+
+  .filter-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+  }
+
+  .filter-switch {
+    display: flex;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 3px;
+    gap: 3px;
+  }
+
+  .fsw-btn {
+    padding: 7px 16px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    color: var(--muted-light);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .18s;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .fsw-btn.active {
+    background: var(--green);
+    color: var(--dark);
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgba(0,230,118,.25);
+  }
+
+  .fsw-btn:not(.active):hover {
+    background: var(--card-hover);
+    color: var(--text);
+  }
+
+  .fsw-count {
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(0,230,118,.15);
+    color: var(--green);
+    padding: 1px 6px;
+    border-radius: 100px;
+    min-width: 20px;
+    text-align: center;
+  }
+
+  .fsw-btn.active .fsw-count {
+    background: rgba(13,26,15,.2);
+    color: var(--dark);
+  }
+
+  /* ── DIVIDER ────────────────────────────────── */
+  hr { border: none; border-top: 1px solid var(--border); margin: 52px 0; }
+
+  /* ── DOWNLOAD SECTION ───────────────────────── */
+  #dl-section { display: none; animation: fadeUp .45s ease both; }
+  #dl-section.visible { display: block; }
+
+  .sel-bar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px 26px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sel-bar::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--green), transparent);
+  }
+
+  .sel-crest {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .sel-crest img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 14px rgba(0,230,118,.4));
+  }
+
+  .sel-info h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: .5px;
+    color: #fff;
+  }
+
+  .sel-info p {
+    font-size: 12px;
+    color: var(--muted-light);
+    margin-top: 3px;
+  }
+
+  .sel-stat {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .sel-stat .big {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: var(--green);
+    line-height: 1;
+  }
+
+  .sel-stat .lbl {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  /* ── MATCH TABLE ────────────────────────────── */
+  .match-table {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .match-table-head {
+    padding: 13px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .match-table-head-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .match-table-head-left::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+  }
+
+  .match-mode-tag {
+    font-size: 9px;
+    background: var(--green-dim);
+    color: var(--green);
+    border: 1px solid rgba(0,230,118,.2);
+    padding: 2px 8px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+  }
+
+  .match-row {
+    display: grid;
+    grid-template-columns: 94px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(36,56,40,.5);
+    font-size: 13px;
+    transition: background .12s;
+  }
+
+  .match-row:last-child { border-bottom: none; }
+  .match-row:hover { background: rgba(0,230,118,.03); }
+
+  .match-date { color: var(--muted-light); font-size: 12px; }
+
+  .match-teams .home { color: var(--text); font-weight: 500; }
+  .match-teams .vs   { color: var(--muted); font-size: 11px; margin: 0 5px; }
+  .match-teams .away { color: var(--muted-light); }
+  .match-teams .home.is-home-club { color: var(--green); }
+
+  .match-comp {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 100px;
+    background: rgba(0,230,118,.1);
+    color: var(--green);
+    font-weight: 700;
+    letter-spacing: .5px;
+    white-space: nowrap;
+  }
+
+  .no-matches {
+    padding: 32px 20px;
+    text-align: center;
+    color: var(--muted-light);
+    font-size: 14px;
+  }
+
+  .show-more-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--muted-light);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s;
+    margin-bottom: 16px;
+  }
+
+  .show-more-btn:hover { border-color: var(--green); color: var(--green); }
+
+  /* ── DOWNLOAD BUTTONS ───────────────────────── */
+  .dl-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  @media(max-width:520px) { .dl-row { grid-template-columns: 1fr; } }
+
+  .btn-dl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 17px 20px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .22s cubic-bezier(.34,1.56,.64,1);
+  }
+
+  .btn-primary {
+    background: var(--green);
+    color: var(--dark);
+  }
+
+  .btn-primary:hover {
+    background: var(--green-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,230,118,.3);
+  }
+
+  .btn-secondary {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--green);
+    color: var(--green);
+    transform: translateY(-2px);
+  }
+
+  .btn-icon { font-size: 18px; }
+
+  .hint {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    padding: 14px 0 0;
+  }
+
+  /* ── LOADER / ERROR ─────────────────────────── */
+  .spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 52px 0;
+    color: var(--muted-light);
+    font-size: 14px;
+    grid-column: 1 / -1;
+  }
+
+  .spin {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-top-color: var(--green);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+  }
+
+  .error-card {
+    background: rgba(255,80,80,.06);
+    border: 1px solid rgba(255,80,80,.18);
+    border-radius: 14px;
+    padding: 18px 22px;
+    color: #ff9090;
+    font-size: 13px;
+    line-height: 1.6;
+    grid-column: 1 / -1;
+  }
+
+  /* ── ANIMATIONS ─────────────────────────────── */
+  @keyframes fadeDown { from { opacity:0; transform:translateY(-20px); } to { opacity:1; transform:none; } }
+  @keyframes fadeUp   { from { opacity:0; transform:translateY(16px);  } to { opacity:1; transform:none; } }
+  @keyframes spin     { to   { transform:rotate(360deg); } }
+
+  ::-webkit-scrollbar { width:6px; height:6px; }
+  ::-webkit-scrollbar-track { background:var(--dark); }
+  ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+  @media(max-width:480px) {
+    .clubs-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+    .match-row { grid-template-columns: 80px 1fr; }
+    .match-comp { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <div class="eyebrow">⚽ Nederlands Voetbal</div>
+    <h1>Jouw Club.<span>Jouw Schema.</span></h1>
+    <p class="tagline">Kies je competitie en club, filter op thuis- of uitwedstrijden, en download het speelschema direct naar je agenda.</p>
+  </header>
+
+  <!-- STAP 1 -->
+  <div class="step-label" style="animation:fadeUp .5s .05s ease both">
+    <div class="step-num">1</div>
+    <span class="step-title">Kies een competitie</span>
+  </div>
+  <div class="comp-tabs" id="comp-tabs">
+    <button class="comp-tab active" data-comp="eredivisie">
+      <div class="t-name">Eredivisie</div>
+      <div class="t-sub">Heren</div>
+    </button>
+    <button class="comp-tab" data-comp="kkd">
+      <div class="t-name">Keuken Kampioen</div>
+      <div class="t-sub">Divisie</div>
+    </button>
+    <button class="comp-tab" data-comp="vrouwen">
+      <div class="t-name">Eredivisie</div>
+      <div class="t-sub">Vrouwen</div>
+    </button>
+  </div>
+
+  <!-- STAP 2 -->
+  <div class="step-label" style="animation:fadeUp .5s .1s ease both">
+    <div class="step-num">2</div>
+    <span class="step-title">Kies je club</span>
+  </div>
+  <div class="clubs-grid" id="clubs-grid">
+    <div class="spinner"><div class="spin"></div>Laden…</div>
+  </div>
+
+  <!-- STAP 3: FILTER -->
+  <div class="step-label" id="filter-step-label" style="display:none; margin-top:32px">
+    <div class="step-num">3</div>
+    <span class="step-title">Wedstrijden filteren</span>
+  </div>
+  <div class="filter-bar" id="filter-bar">
+    <div class="filter-info">
+      <div class="filter-dot"></div>
+      Wedstrijden
+    </div>
+    <div class="filter-switch">
+      <button class="fsw-btn active" data-filter="all" id="fsw-all">
+        Alle wedstrijden
+        <span class="fsw-count" id="fsw-count-all">0</span>
+      </button>
+      <button class="fsw-btn" data-filter="home" id="fsw-home">
+        Alleen thuis
+        <span class="fsw-count" id="fsw-count-home">0</span>
+      </button>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- STAP 4: DOWNLOAD -->
+  <div id="dl-section">
+    <div class="step-label">
+      <div class="step-num">4</div>
+      <span class="step-title">Download je kalender</span>
+    </div>
+
+    <div class="sel-bar">
+      <div class="sel-crest" id="sel-crest"></div>
+      <div class="sel-info">
+        <h2 id="sel-name">—</h2>
+        <p id="sel-meta">—</p>
+      </div>
+      <div class="sel-stat">
+        <div class="big" id="sel-count">—</div>
+        <div class="lbl" id="sel-count-lbl">Wedstrijden</div>
+      </div>
+    </div>
+
+    <div class="match-table">
+      <div class="match-table-head">
+        <div class="match-table-head-left">Aankomende wedstrijden</div>
+        <div class="match-mode-tag" id="mode-tag">Alle</div>
+      </div>
+      <div id="match-list"></div>
+    </div>
+    <button class="show-more-btn" id="show-more-btn" style="display:none"></button>
+
+    <div class="dl-row">
+      <button class="btn-dl btn-primary"   id="btn-google"><span class="btn-icon">📅</span> Google Calendar</button>
+      <button class="btn-dl btn-secondary" id="btn-apple"><span class="btn-icon">🍎</span> Apple Kalender</button>
+    </div>
+    <p class="hint">Het .ics bestand werkt met Google Calendar, Apple Kalender, Outlook en elke andere agenda-app</p>
+  </div>
+
+</div><!-- /wrap -->
+
+<script>
+// ─────────────────────────────────────────────────────────
+// CONFIG — pas deze paden aan naar jouw server/locatie
+// ─────────────────────────────────────────────────────────
+const JSON_FILES = {
+  eredivisie: 'eredivisie.json',
+  kkd:        'kkd.json',
+  vrouwen:    'vrouwen.json',
+};
+
+// ─────────────────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────────────────
+const ST = {
+  comp:      'eredivisie',
+  data:      null,     // loaded JSON for current comp
+  club:      null,     // selected team object
+  matches:   [],       // all matches for selected club
+  filter:    'all',    // 'all' | 'home'
+  showAll:   false,
+};
+
+// ─────────────────────────────────────────────────────────
+// UTILS
+// ─────────────────────────────────────────────────────────
+const $  = id => document.getElementById(id);
+const fmt = d  => new Date(d).toLocaleDateString('nl-NL', { weekday:'short', day:'numeric', month:'short' });
+const fmtTime = d => new Date(d).toLocaleTimeString('nl-NL', { hour:'2-digit', minute:'2-digit' });
+
+// ─────────────────────────────────────────────────────────
+// LOAD JSON
+// ─────────────────────────────────────────────────────────
+async function loadCompetition(comp) {
+  const grid = $('clubs-grid');
+  grid.innerHTML = '<div class="spinner"><div class="spin"></div>Laden…</div>';
+  hideDownload();
+  hideFilter();
+
+  try {
+    const r = await fetch(JSON_FILES[comp]);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    ST.data = await r.json();
+    renderClubs(ST.data.teams);
+  } catch (e) {
+    grid.innerHTML = `<div class="error-card">
+      <strong>Kon ${JSON_FILES[comp]} niet laden.</strong><br>
+      Zorg dat het JSON bestand in dezelfde map staat als dit HTML bestand.<br>
+      <small style="opacity:.6">${e.message}</small>
+    </div>`;
+  }
+}
+
+// ─────────────────────────────────────────────────────────
+// RENDER CLUBS
+// ─────────────────────────────────────────────────────────
+function renderClubs(teams) {
+  $('clubs-grid').innerHTML = teams.map(t => `
+    <div class="club-card ${ST.club?.id === t.id ? 'selected' : ''}"
+         data-id="${t.id}" onclick="selectClub('${t.id}')">
+      <div class="club-crest">
+        ${t.crest
+          ? `<img src="${t.crest}" alt="${t.name}" onerror="this.parentElement.innerHTML='<div class=club-crest-fb>⚽</div>'">`
+          : '<div class="club-crest-fb">⚽</div>'}
+      </div>
+      <div class="club-name">${t.name}</div>
+      ${t.city ? `<div class="club-city">${t.city}</div>` : ''}
+      <div class="club-check">✓</div>
+    </div>`).join('');
+}
+
+// ─────────────────────────────────────────────────────────
+// SELECT CLUB
+// ─────────────────────────────────────────────────────────
+function selectClub(id) {
+  if (!ST.data) return;
+  ST.club   = ST.data.teams.find(t => t.id === id);
+  ST.filter = 'all';
+  ST.showAll = false;
+  if (!ST.club) return;
+
+  // highlight
+  document.querySelectorAll('.club-card')
+    .forEach(el => el.classList.toggle('selected', el.dataset.id === id));
+
+  // gather matches for this club
+  ST.matches = ST.data.fixtures
+    .filter(f => f.homeTeam === id || f.awayTeam === id)
+    .map(f => ({
+      date:        f.date,
+      home:        teamName(f.homeTeam),
+      away:        teamName(f.awayTeam),
+      homeId:      f.homeTeam,
+      awayId:      f.awayTeam,
+      competition: f.competition,
+      venue:       f.venue || '',
+      isHome:      f.homeTeam === id,
+    }))
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  updateFilterBar();
+  showDownload();
+
+  setTimeout(() => $('filter-bar').scrollIntoView({ behavior:'smooth', block:'start' }), 100);
+}
+
+function teamName(id) {
+  const t = ST.data?.teams.find(t => t.id === id);
+  return t ? t.name : id;
+}
+
+// ─────────────────────────────────────────────────────────
+// FILTER BAR
+// ─────────────────────────────────────────────────────────
+function updateFilterBar() {
+  const homeCount = ST.matches.filter(m => m.isHome).length;
+  const allCount  = ST.matches.length;
+
+  $('fsw-count-all').textContent  = allCount;
+  $('fsw-count-home').textContent = homeCount;
+
+  // sync active state
+  ['all','home'].forEach(f => {
+    document.querySelector(`[data-filter="${f}"]`)
+      .classList.toggle('active', ST.filter === f);
+  });
+
+  showFilter();
+}
+
+function showFilter() {
+  $('filter-bar').classList.add('visible');
+  $('filter-step-label').style.display = 'flex';
+}
+
+function hideFilter() {
+  $('filter-bar').classList.remove('visible');
+  $('filter-step-label').style.display = 'none';
+}
+
+// filter switch clicks
+document.querySelectorAll('.fsw-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    ST.filter  = btn.dataset.filter;
+    ST.showAll = false;
+    updateFilterBar();
+    renderMatches();
+    updateSelStat();
+  });
+});
+
+// ─────────────────────────────────────────────────────────
+// RENDER MATCHES
+// ─────────────────────────────────────────────────────────
+function filteredMatches() {
+  return ST.filter === 'home'
+    ? ST.matches.filter(m => m.isHome)
+    : ST.matches;
+}
+
+function renderMatches() {
+  const matches = filteredMatches();
+  const visible = ST.showAll ? matches : matches.slice(0, 7);
+
+  if (!matches.length) {
+    $('match-list').innerHTML = `<div class="no-matches">Geen wedstrijden gevonden voor dit filter.</div>`;
+    $('show-more-btn').style.display = 'none';
+    return;
+  }
+
+  $('match-list').innerHTML = visible.map(m => `
+    <div class="match-row">
+      <div class="match-date">${fmt(m.date)} <span style="opacity:.5">${fmtTime(m.date)}</span></div>
+      <div class="match-teams">
+        <span class="home ${m.isHome ? 'is-home-club' : ''}">${m.home}</span>
+        <span class="vs">vs</span>
+        <span class="away">${m.away}</span>
+      </div>
+      <div class="match-comp">${m.competition}</div>
+    </div>`).join('');
+
+  const more = matches.length > 7;
+  const btn  = $('show-more-btn');
+  btn.style.display = more && !ST.showAll ? 'block' : 'none';
+  btn.textContent   = `Toon alle ${matches.length} wedstrijden ↓`;
+
+  // update mode tag
+  $('mode-tag').textContent = ST.filter === 'home' ? 'Alleen thuis' : 'Alle';
+}
+
+$('show-more-btn').addEventListener('click', () => {
+  ST.showAll = true;
+  renderMatches();
+});
+
+// ─────────────────────────────────────────────────────────
+// DOWNLOAD SECTION
+// ─────────────────────────────────────────────────────────
+function showDownload() {
+  const dl = $('dl-section');
+  dl.classList.add('visible');
+
+  // crest
+  const sc = $('sel-crest');
+  sc.innerHTML = ST.club.crest
+    ? `<img src="${ST.club.crest}" alt="${ST.club.name}" onerror="this.outerHTML='<span style=font-size:40px>⚽</span>'" style="max-width:52px;max-height:52px;object-fit:contain">`
+    : '<span style="font-size:40px">⚽</span>';
+
+  const compLabels = { eredivisie:'Eredivisie · Heren', kkd:'Keuken Kampioen Divisie', vrouwen:'Eredivisie Vrouwen' };
+  $('sel-name').textContent = ST.club.name;
+  $('sel-meta').textContent = `${compLabels[ST.comp]} · ${ST.data.competition.season}`;
+
+  updateSelStat();
+  renderMatches();
+}
+
+function updateSelStat() {
+  const n = filteredMatches().length;
+  $('sel-count').textContent     = n;
+  $('sel-count-lbl').textContent = ST.filter === 'home' ? 'Thuiswedstrijden' : 'Wedstrijden';
+}
+
+function hideDownload() {
+  $('dl-section').classList.remove('visible');
+  ST.club    = null;
+  ST.matches = [];
+}
+
+// ─────────────────────────────────────────────────────────
+// ICS GENERATOR
+// ─────────────────────────────────────────────────────────
+function pz(n) { return String(n).padStart(2,'0'); }
+
+function toICS(d) {
+  const u = new Date(d);
+  return `${u.getUTCFullYear()}${pz(u.getUTCMonth()+1)}${pz(u.getUTCDate())}T${pz(u.getUTCHours())}${pz(u.getUTCMinutes())}00Z`;
+}
+
+function buildICS(matches, clubName, filterLabel) {
+  const calName = filterLabel === 'home'
+    ? `${clubName} · Thuiswedstrijden`
+    : `${clubName} · Speelschema`;
+
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Voetbalkalender NL//NL',
+    `X-WR-CALNAME:${calName}`,
+    'X-WR-TIMEZONE:Europe/Amsterdam',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+  ];
+
+  matches.forEach((m, i) => {
+    const start = new Date(m.date);
+    const end   = new Date(start.getTime() + 7200000); // +2h
+    const loc   = m.venue ? `\r\nLOCATION:${m.venue}` : '';
+    lines.push(
+      'BEGIN:VEVENT',
+      `UID:vcnl-${clubName.replace(/\W/g,'-')}-${i}-${start.getTime()}@voetbalkalender`,
+      `DTSTART:${toICS(start)}`,
+      `DTEND:${toICS(end)}`,
+      `SUMMARY:${m.home} - ${m.away}`,
+      `DESCRIPTION:${m.competition}${m.venue ? ' · ' + m.venue : ''}`,
+      `CATEGORIES:Voetbal,${m.competition}` + loc,
+      'END:VEVENT',
+    );
+  });
+
+  lines.push('END:VCALENDAR');
+  return lines.join('\r\n');
+}
+
+function doDownload() {
+  const matches = filteredMatches();
+  if (!ST.club || !matches.length) return;
+
+  const suffix = ST.filter === 'home' ? '-thuis' : '';
+  const ics    = buildICS(matches, ST.club.name, ST.filter);
+  const blob   = new Blob([ics], { type:'text/calendar;charset=utf-8' });
+  const url    = URL.createObjectURL(blob);
+  const a      = document.createElement('a');
+  a.href       = url;
+  a.download   = `${ST.club.name.replace(/\s+/g,'-').toLowerCase()}${suffix}-${ST.data.competition.season.replace('/','')}.ics`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+$('btn-google').addEventListener('click', doDownload);
+$('btn-apple').addEventListener('click',  doDownload);
+
+// ─────────────────────────────────────────────────────────
+// COMPETITION TABS
+// ─────────────────────────────────────────────────────────
+$('comp-tabs').addEventListener('click', e => {
+  const tab = e.target.closest('.comp-tab');
+  if (!tab) return;
+  const comp = tab.dataset.comp;
+  if (comp === ST.comp) return;
+
+  document.querySelectorAll('.comp-tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  ST.comp = comp;
+
+  loadCompetition(comp);
+});
+
+// ─────────────────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────────────────
+loadCompetition('eredivisie');
+</script>
+</body>
+</html>
