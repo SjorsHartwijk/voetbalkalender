@@ -134,7 +134,6 @@
     gap: 4px;
     margin-bottom: 40px;
     animation: fadeUp .5s .1s ease both;
-    overflow-x: auto;
   }
 
   .comp-tab {
@@ -174,6 +173,32 @@
 
   .comp-tab:not(.active):hover { background: var(--card-hover); }
   .comp-tab:not(.active):hover .t-name { color: var(--text); }
+
+  /* Vertical tabs on mobile */
+  @media (max-width: 600px) {
+    .comp-tabs {
+      flex-direction: column;
+    }
+
+    .comp-tab {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 16px;
+    }
+
+    .comp-tab .t-name {
+      white-space: normal;
+      flex: 1;
+    }
+
+    .comp-tab .t-sub {
+      margin-top: 0;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+  }
 
   /* ── CLUBS ──────────────────────────────────── */
   .clubs-grid {
@@ -654,8 +679,99 @@
   ::-webkit-scrollbar-track { background:var(--dark); }
   ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
 
-  @media(max-width:480px) {
+  /* ── RESPONSIVE BREAKPOINTS ─────────────────── */
+
+  /* Tablet (≤ 768px) */
+  @media (max-width: 768px) {
+    .wrap {
+      padding: 36px 16px 80px;
+    }
+
+    .sel-bar {
+      padding: 18px 20px;
+      gap: 14px;
+    }
+
+    .sel-stat {
+      margin-left: 0;
+      text-align: left;
+    }
+
+    .filter-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .filter-switch {
+      width: 100%;
+    }
+
+    .fsw-btn {
+      flex: 1;
+      justify-content: center;
+    }
+
+    .match-row {
+      grid-template-columns: 90px 1fr auto;
+      gap: 8px;
+      padding: 12px 16px;
+    }
+
+    .match-comp {
+      font-size: 9px;
+      padding: 2px 6px;
+    }
+  }
+
+  /* Mobile (≤ 520px) */
+  @media (max-width: 520px) {
+    .dl-row { grid-template-columns: 1fr; }
+
+    .sel-bar {
+      padding: 16px;
+      gap: 12px;
+    }
+
+    .sel-info #sel-name {
+      font-size: 22px;
+    }
+
+    .match-table-head {
+      padding: 11px 16px;
+    }
+  }
+
+  /* Small mobile (≤ 480px) */
+  @media (max-width: 480px) {
     .clubs-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
-    .match-row { grid-template-columns: 80px 1fr; }
+
+    .match-row {
+      grid-template-columns: 78px 1fr;
+      gap: 6px;
+      padding: 10px 14px;
+    }
+
     .match-comp { display: none; }
+
+    .hint, .disclaimer {
+      font-size: 11px;
+    }
+  }
+
+  /* Very small (≤ 360px) */
+  @media (max-width: 360px) {
+    .clubs-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+
+    .step-label {
+      gap: 8px;
+    }
+
+    .match-date {
+      font-size: 10px;
+    }
+
+    .match-teams {
+      font-size: 12px;
+    }
   }
