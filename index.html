@@ -18,14 +18,15 @@
   <!-- HEADER -->
   <header>
     <div class="eyebrow">Nederlands Voetbal</div>
-    <h1>Jouw Club.<span>Jouw Schema.</span></h1>
+    <h1>Voetbalkalender</h1>
+    <h2><span>Jouw club</span> jouw schema</h2>
     <p class="tagline">Kies je competitie en club, filter op thuis- of uitwedstrijden, en download het speelschema direct naar je agenda.</p>
   </header>
 
   <!-- STAP 1 -->
   <div class="step-label" style="animation:fadeUp .5s .05s ease both">
     <div class="step-num">1</div>
-    <span class="step-title">Kies een competitie</span>
+    <h3 class="step-title">Kies een competitie</h3>
   </div>
   <div class="comp-tabs" id="comp-tabs">
     <button class="comp-tab active" data-comp="eredivisie">
@@ -45,7 +46,7 @@
   <!-- STAP 2 -->
   <div class="step-label" style="animation:fadeUp .5s .1s ease both">
     <div class="step-num">2</div>
-    <span class="step-title">Kies je club</span>
+    <h3 class="step-title">Kies je club</h3>
   </div>
   <div class="clubs-grid" id="clubs-grid">
     <div class="spinner"><div class="spin"></div>Laden…</div>
@@ -54,7 +55,7 @@
   <!-- STAP 3: FILTER -->
   <div class="step-label" id="filter-step-label" style="display:none; margin-top:32px">
     <div class="step-num">3</div>
-    <span class="step-title">Wedstrijden filteren</span>
+    <h3 class="step-title">Wedstrijden filteren</h3>
   </div>
   <div class="filter-bar" id="filter-bar">
     <div class="filter-info">
@@ -79,13 +80,13 @@
   <div id="dl-section">
     <div class="step-label">
       <div class="step-num">4</div>
-      <span class="step-title">Download je kalender</span>
+      <h3 class="step-title">Download je kalender</h3>
     </div>
 
     <div class="sel-bar">
       <div class="sel-crest" id="sel-crest"></div>
       <div class="sel-info">
-        <h2 id="sel-name">—</h2>
+        <span id="sel-name">—</span>
         <p id="sel-meta">—</p>
       </div>
       <div class="sel-stat">
@@ -173,7 +174,7 @@ function renderClubs(teams) {
          data-id="${t.id}" onclick="selectClub('${t.id}')">
       <div class="club-crest">
         ${t.crest
-          ? `<img src="${t.crest}" alt="${t.name}" onerror="this.parentElement.innerHTML='<div class=club-crest-fb>⚽</div>'">`
+          ? `<img src="${t.crest}" alt="logo ${t.name}" title="${t.name}" onerror="this.parentElement.innerHTML='<div class=club-crest-fb>⚽</div>'">`
           : '<div class="club-crest-fb">⚽</div>'}
       </div>
       <div class="club-name">${t.name}</div>

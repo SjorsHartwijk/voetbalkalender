@@ -70,7 +70,7 @@
     margin-bottom: 20px;
   }
 
-  h1 {
+  h1, h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(58px, 12vw, 110px);
     line-height: .91;
@@ -78,8 +78,9 @@
     color: #fff;
     text-shadow: 0 0 80px rgba(0,230,118,.25);
   }
+  h2 { font-size: clamp(36px, 6vw, 48px); }
 
-  h1 span {
+  h1 span, h2 span {
     color: var(--green);
     display: block;
   }
