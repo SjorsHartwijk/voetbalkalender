@@ -6,7 +6,7 @@
     "logo": null
   },
   "teams": [
-    { "id": "almere",      "name": "Almere City",       "city": "Almere",     "crest": null },
+    { "id": "almere",      "name": "Almere City",       "city": "Almere",     "crest": "images/crest/almere.png" },
     { "id": "jong-az",     "name": "Jong AZ",          "city": "Alkmaar",    "crest": "images/crest/az.png" },
     { "id": "den-bosch",   "name": "FC Den Bosch",     "city": "Den Bosch",  "crest": null },
     { "id": "dordrecht",   "name": "FC Dordrecht",     "city": "Dordrecht",  "crest": null },
@@ -18,7 +18,7 @@
     { "id": "jong-psv",    "name": "Jong PSV",         "city": "Eindhoven",  "crest": "images/crest/psv.png" },
     { "id": "maastricht",  "name": "MVV Maastricht",   "city": "Maastricht", "crest": null },
     { "id": "nac",         "name": "NAC Breda",        "city": "Breda",      "crest": "images/crest/nac.png" },
-    { "id": "rkc",         "name": "RKC Waalwijk",     "city": "Waalwijk",   "crest": null },
+    { "id": "rkc",         "name": "RKC Waalwijk",     "city": "Waalwijk",   "crest": "images/crest/rkc.png" },
     { "id": "roda",        "name": "Roda JC",          "city": "Kerkrade",   "crest": null },
     { "id": "top-oss",     "name": "TOP Oss",          "city": "Oss",        "crest": null }
   ],
