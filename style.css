@@ -209,6 +209,12 @@
     animation: fadeUp .45s .15s ease both;
   }
 
+  @media (min-width: 1200px) {
+    .clubs-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
   .club-card {
     background: var(--card);
     border: 1px solid var(--border);
