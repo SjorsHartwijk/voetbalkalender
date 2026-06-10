@@ -141,6 +141,30 @@ const ST = {
 const $  = id => document.getElementById(id);
 const fmt = d  => new Date(d).toLocaleDateString('nl-NL', { weekday:'short', day:'numeric', month:'short' });
 const fmtTime = d => new Date(d).toLocaleTimeString('nl-NL', { hour:'2-digit', minute:'2-digit' });
+function slugify(str) {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function getRouteInfo() {
+
+  const parts = window.location.pathname
+    .split('/')
+    .filter(Boolean);
+
+  if (parts.length === 2) {
+    return {
+      comp: parts[0],
+      slug: parts[1]
+    };
+  }
+
+  return null;
+}
 
 // ─────────────────────────────────────────────────────────
 // LOAD JSON
@@ -189,6 +213,29 @@ function renderClubs(teams) {
 function selectClub(id) {
   if (!ST.data) return;
   ST.club   = ST.data.teams.find(t => t.id === id);
+    if (ST.club) {
+
+    const slug = slugify(ST.club.name);
+
+    window.history.replaceState(
+      {},
+      '',
+      `/${ST.comp}/${slug}`
+    );
+
+    document.title =
+      `${ST.club.name} Speelschema ${ST.data.competition.season} | Voetbalkalender`;
+
+    const metaDescription =
+      document.querySelector('meta[name="description"]');
+
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        'content',
+        `Download het speelschema van ${ST.club.name} direct naar je agenda.`
+      );
+    }
+  }
   ST.filter = 'all';
   ST.showAll = false;
   if (!ST.club) return;
@@ -527,7 +574,38 @@ $('comp-tabs').addEventListener('click', e => {
 // ─────────────────────────────────────────────────────────
 // INIT
 // ─────────────────────────────────────────────────────────
-loadCompetition('eredivisie');
+async function init() {
+
+  const route = getRouteInfo();
+
+  if (route?.comp && JSON_FILES[route.comp]) {
+    ST.comp = route.comp;
+  }
+
+  document
+    .querySelectorAll('.comp-tab')
+    .forEach(tab => {
+      tab.classList.toggle(
+        'active',
+        tab.dataset.comp === ST.comp
+      );
+    });
+
+  await loadCompetition(ST.comp);
+
+  if (!route?.slug) return;
+
+  const club =
+    ST.data.teams.find(
+      t => slugify(t.name) === route.slug
+    );
+
+  if (club) {
+    selectClub(club.id);
+  }
+}
+
+init();
 </script>
 </body>
 </html>

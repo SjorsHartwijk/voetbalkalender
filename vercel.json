@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/eredivisie/:slug",
+      "destination": "/"
+    },
+    {
+      "source": "/kkd/:slug",
+      "destination": "/"
+    },
+    {
+      "source": "/vrouwen/:slug",
+      "destination": "/"
+    }
+  ]
+}
