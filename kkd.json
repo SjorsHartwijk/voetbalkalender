@@ -103,10 +103,10 @@
       "crest": "images/crest/vitesse.png"
     },
     {
-      "id": "de-graafschap",
+      "id": "graafschap",
       "name": "De Graafschap",
       "city": "Doetinchem",
-      "crest": "images/crest/de-graafschap.png"
+      "crest": "images/crest/graafschap.png"
     },
     {
       "id": "heracles",
