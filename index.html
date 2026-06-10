@@ -1,338 +1,352 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voetbalkalender | Wedstrijddata van jouw favoriete voetbalclub</title>
-  <meta name="description" content="Download het speelschema van jouw favoriete voetbalclub direct naar je agenda. Voeg alle wedstrijden eenvoudig toe aan Google Agenda, Apple Agenda, Outlook of andere agenda-apps.">
-  <meta name="keywords" content="voetbal, kalender, agenda, speelschema, Nederland, Eredivisie, Keuken Kampioen Divisie, Vrouwen Eredivisie">
-  <meta name="author" content="Sjors Hartwijk">
-  <meta property="og:title" content="Voetbalkalender - Jouw Club, Jouw Schema">
-  <meta property="og:description" content="Kies je favoriete voetbalclub en download direct het speelschema naar je agenda.">
-  <meta name="theme-color" content="#0d1a0f">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voetbalkalender | Wedstrijddata van jouw favoriete voetbalclub</title>
+	<meta name="description"
+		content="Download het speelschema van jouw favoriete voetbalclub direct naar je agenda. Voeg alle wedstrijden eenvoudig toe aan Google Agenda, Apple Agenda, Outlook of andere agenda-apps.">
+	<meta name="keywords"
+		content="voetbal, kalender, agenda, speelschema, Nederland, Eredivisie, Keuken Kampioen Divisie, Vrouwen Eredivisie">
+	<meta name="author" content="Sjors Hartwijk">
+	<meta property="og:title" content="Voetbalkalender - Jouw Club, Jouw Schema">
+	<meta property="og:description"
+		content="Kies je favoriete voetbalclub en download direct het speelschema naar je agenda.">
+	<meta name="theme-color" content="#0d1a0f">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="wrap">
-  <!-- HEADER -->
-  <header>
-    <div class="eyebrow">Nederlands Voetbal</div>
-    <h1>Voetbalkalender</h1>
-    <h2><span>Jouw club</span> jouw schema</h2>
-    <p class="tagline">Kies je competitie en club, filter op thuis- of uitwedstrijden, en download het speelschema direct naar je agenda.</p>
-    <div class="info-banner">
-      De wedstrijddata zijn momenteel gebaseerd op de conceptprogramma's zoals gepubliceerd door de KNVB.<br/><strong>Maandag 15 juni</strong> wordt het competitieprogramma definitief vastgesteld en deze website bijgewerkt.
-    </div>
-  </header>
+	<div class="wrap">
+		<!-- HEADER -->
+		<header>
+			<div class="eyebrow">Nederlands Voetbal</div>
+			<h1>Voetbalkalender</h1>
+			<h2><span>Jouw club</span> jouw schema</h2>
+			<p class="tagline">Kies je competitie en club, filter op thuis- of uitwedstrijden, en download het
+				speelschema direct naar je agenda.</p>
+			<div class="info-banner">
+				De wedstrijddata zijn momenteel gebaseerd op de conceptprogramma's zoals gepubliceerd door de
+				KNVB.<br /><strong>Maandag 15 juni</strong> wordt het competitieprogramma definitief vastgesteld en deze
+				website bijgewerkt.
+			</div>
+		</header>
 
-  <!-- STAP 1 -->
-  <div class="step-label" style="animation:fadeUp .5s .05s ease both">
-    <div class="step-num">1</div>
-    <h3 class="step-title">Kies een competitie</h3>
-  </div>
-  <div class="comp-tabs" id="comp-tabs">
-    <button class="comp-tab active" data-comp="eredivisie">
-      <div class="t-name">Vriendenloterij Eredivisie</div>
-      <div class="t-sub">Heren</div>
-    </button>
-    <button class="comp-tab" data-comp="kkd">
-      <div class="t-name">Keuken Kampioen Divisie</div>
-      <div class="t-sub">Heren</div>
-    </button>
-    <button class="comp-tab" data-comp="vrouwen">
-      <div class="t-name">Eurojackpot Vrouwen Eredivisie</div>
-      <div class="t-sub">Vrouwen</div>
-    </button>
-  </div>
+		<!-- STAP 1 -->
+		<div class="step-label" style="animation:fadeUp .5s .05s ease both">
+			<div class="step-num">1</div>
+			<h3 class="step-title">Kies een competitie</h3>
+		</div>
+		<div class="comp-tabs" id="comp-tabs">
+			<button class="comp-tab active" data-comp="eredivisie">
+				<div class="t-name">Vriendenloterij Eredivisie</div>
+				<div class="t-sub">Heren</div>
+			</button>
+			<button class="comp-tab" data-comp="kkd">
+				<div class="t-name">Keuken Kampioen Divisie</div>
+				<div class="t-sub">Heren</div>
+			</button>
+			<button class="comp-tab" data-comp="vrouwen">
+				<div class="t-name">Eurojackpot Vrouwen Eredivisie</div>
+				<div class="t-sub">Vrouwen</div>
+			</button>
+		</div>
 
-  <!-- STAP 2 -->
-  <div class="step-label" style="animation:fadeUp .5s .1s ease both">
-    <div class="step-num">2</div>
-    <h3 class="step-title">Kies je club</h3>
-  </div>
-  <div class="clubs-grid" id="clubs-grid">
-    <div class="spinner"><div class="spin"></div>Laden…</div>
-  </div>
+		<!-- STAP 2 -->
+		<div class="step-label" style="animation:fadeUp .5s .1s ease both">
+			<div class="step-num">2</div>
+			<h3 class="step-title">Kies je club</h3>
+		</div>
+		<div class="clubs-grid" id="clubs-grid">
+			<div class="spinner">
+				<div class="spin"></div>Laden…
+			</div>
+		</div>
 
-  <!-- STAP 3: FILTER -->
-  <div class="step-label" id="filter-step-label" style="display:none; margin-top:32px">
-    <div class="step-num">3</div>
-    <h3 class="step-title">Wedstrijden filteren</h3>
-  </div>
-  <div class="filter-bar" id="filter-bar">
-    <div class="filter-info">
-      <div class="filter-dot"></div>
-      Wedstrijden
-    </div>
-    <div class="filter-switch">
-      <button class="fsw-btn active" data-filter="all" id="fsw-all">
-        Alle wedstrijden
-        <span class="fsw-count" id="fsw-count-all">0</span>
-      </button>
-      <button class="fsw-btn" data-filter="home" id="fsw-home">
-        Alleen thuis
-        <span class="fsw-count" id="fsw-count-home">0</span>
-      </button>
-    </div>
-  </div>
+		<!-- STAP 3: FILTER -->
+		<div class="step-label" id="filter-step-label" style="display:none; margin-top:32px">
+			<div class="step-num">3</div>
+			<h3 class="step-title">Wedstrijden filteren</h3>
+		</div>
+		<div class="filter-bar" id="filter-bar">
+			<div class="filter-info">
+				<div class="filter-dot"></div>
+				Wedstrijden
+			</div>
+			<div class="filter-switch">
+				<button class="fsw-btn active" data-filter="all" id="fsw-all">
+					Alle wedstrijden
+					<span class="fsw-count" id="fsw-count-all">0</span>
+				</button>
+				<button class="fsw-btn" data-filter="home" id="fsw-home">
+					Alleen thuis
+					<span class="fsw-count" id="fsw-count-home">0</span>
+				</button>
+			</div>
+		</div>
 
-  <hr>
+		<hr>
 
-  <!-- STAP 4: DOWNLOAD -->
-  <div id="dl-section">
-    <div class="step-label">
-      <div class="step-num">4</div>
-      <h3 class="step-title">Download je kalender</h3>
-    </div>
+		<!-- STAP 4: DOWNLOAD -->
+		<div id="dl-section">
+			<div class="step-label">
+				<div class="step-num">4</div>
+				<h3 class="step-title">Download je kalender</h3>
+			</div>
 
-    <div class="sel-bar">
-      <div class="sel-crest" id="sel-crest"></div>
-      <div class="sel-info">
-        <span id="sel-name">—</span>
-        <p id="sel-meta">—</p>
-      </div>
-      <div class="sel-stat">
-        <div class="big" id="sel-count">—</div>
-        <div class="lbl" id="sel-count-lbl">Wedstrijden</div>
-      </div>
-    </div>
+			<div class="sel-bar">
+				<div class="sel-crest" id="sel-crest"></div>
+				<div class="sel-info">
+					<span id="sel-name">—</span>
+					<p id="sel-meta">—</p>
+				</div>
+				<div class="sel-stat">
+					<div class="big" id="sel-count">—</div>
+					<div class="lbl" id="sel-count-lbl">Wedstrijden</div>
+				</div>
+			</div>
 
-    <div class="match-table">
-      <div class="match-table-head">
-        <div class="match-table-head-left">Aankomende wedstrijden</div>
-        <div class="match-mode-tag" id="mode-tag">Alle</div>
-      </div>
-      <div id="match-list"></div>
-    </div>
-    <button class="show-more-btn" id="show-more-btn" style="display:none"></button>
+			<div class="match-table">
+				<div class="match-table-head">
+					<div class="match-table-head-left">Aankomende wedstrijden</div>
+					<div class="match-mode-tag" id="mode-tag">Alle</div>
+				</div>
+				<div id="match-list"></div>
+			</div>
+			<button class="show-more-btn" id="show-more-btn" style="display:none"></button>
 
-    <div class="dl-row">
-      <button class="btn-dl btn-primary"   id="btn-google">Download</button>
-    </div>
-    <p class="hint">Het .ics bestand werkt met Google Calendar, Apple Kalender, Outlook en elke andere agenda-app</p>
-    <p class="disclaimer">Voetbalkalender is met grote zorg samengesteld. Houd er rekening mee dat plotselinge wijzigingen in speeldata en tijdstippen altijd mogelijk zijn. Raadpleeg de officiële kanalen van jouw club voor de meest up-to-date informatie.</p>
-  </div>
+			<div class="dl-row">
+				<button class="btn-dl btn-primary" id="btn-google">Download</button>
+			</div>
+			<p class="hint">Het .ics bestand werkt met Google Calendar, Apple Kalender, Outlook en elke andere
+				agenda-app</p>
+			<p class="disclaimer">Voetbalkalender is met grote zorg samengesteld. Houd er rekening mee dat plotselinge
+				wijzigingen in speeldata en tijdstippen altijd mogelijk zijn. Raadpleeg de officiële kanalen van jouw
+				club voor de meest up-to-date informatie.</p>
+		</div>
 
-</div><!-- /wrap -->
+	</div><!-- /wrap -->
 
-<script>
-// ─────────────────────────────────────────────────────────
-// CONFIG — pas deze paden aan naar jouw server/locatie
-// ─────────────────────────────────────────────────────────
-const JSON_FILES = {
-  eredivisie: 'eredivisie.json',
-  kkd:        'kkd.json',
-  vrouwen:    'vrouwen.json',
-};
+	<script>
+		// ─────────────────────────────────────────────────────────
+		// CONFIG — pas deze paden aan naar jouw server/locatie
+		// ─────────────────────────────────────────────────────────
+		const JSON_FILES = {
+			eredivisie: 'eredivisie.json',
+			kkd: 'kkd.json',
+			vrouwen: 'vrouwen.json',
+		};
 
-// ─────────────────────────────────────────────────────────
-// STATE
-// ─────────────────────────────────────────────────────────
-const ST = {
-  comp:      'eredivisie',
-  data:      null,     // loaded JSON for current comp
-  club:      null,     // selected team object
-  matches:   [],       // all matches for selected club
-  filter:    'all',    // 'all' | 'home'
-  showAll:   false,
-};
+		// ─────────────────────────────────────────────────────────
+		// STATE
+		// ─────────────────────────────────────────────────────────
+		const ST = {
+			comp: 'eredivisie',
+			data: null,     // loaded JSON for current comp
+			club: null,     // selected team object
+			matches: [],       // all matches for selected club
+			filter: 'all',    // 'all' | 'home'
+			showAll: false,
+		};
 
-// ─────────────────────────────────────────────────────────
-// UTILS
-// ─────────────────────────────────────────────────────────
-const $  = id => document.getElementById(id);
-const fmt = d  => new Date(d).toLocaleDateString('nl-NL', { weekday:'short', day:'numeric', month:'short' });
-const fmtTime = d => new Date(d).toLocaleTimeString('nl-NL', { hour:'2-digit', minute:'2-digit' });
-function slugify(str) {
-  return str
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
-}
+		// ─────────────────────────────────────────────────────────
+		// UTILS
+		// ─────────────────────────────────────────────────────────
+		const $ = id => document.getElementById(id);
+		const fmt = d => new Date(d).toLocaleDateString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short' });
+		const fmtTime = d => new Date(d).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+		function slugify(str) {
+			return str
+				.toLowerCase()
+				.normalize('NFD')
+				.replace(/[\u0300-\u036f]/g, '')
+				.replace(/[^a-z0-9]+/g, '-')
+				.replace(/^-|-$/g, '');
+		}
 
-function getRouteInfo() {
+		function getRouteInfo() {
 
-  const parts = window.location.pathname
-    .split('/')
-    .filter(Boolean);
+			const parts = window.location.pathname
+				.split('/')
+				.filter(Boolean);
 
-  if (parts.length === 2) {
-    return {
-      comp: parts[0],
-      slug: parts[1]
-    };
-  }
+			if (parts.length === 2) {
+				return {
+					comp: parts[0],
+					slug: parts[1]
+				};
+			}
 
-  return null;
-}
+			return null;
+		}
 
-// ─────────────────────────────────────────────────────────
-// LOAD JSON
-// ─────────────────────────────────────────────────────────
-async function loadCompetition(comp) {
-  const grid = $('clubs-grid');
-  grid.innerHTML = '<div class="spinner"><div class="spin"></div>Laden…</div>';
-  hideDownload();
-  hideFilter();
+		// ─────────────────────────────────────────────────────────
+		// LOAD JSON
+		// ─────────────────────────────────────────────────────────
+		async function loadCompetition(comp) {
+			const grid = $('clubs-grid');
+			grid.innerHTML = '<div class="spinner"><div class="spin"></div>Laden…</div>';
+			hideDownload();
+			hideFilter();
 
-  try {
-    const r = await fetch(JSON_FILES[comp]);
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    ST.data = await r.json();
-    renderClubs(ST.data.teams);
-  } catch (e) {
-    grid.innerHTML = `<div class="error-card">
+			try {
+				const r = await fetch(JSON_FILES[comp]);
+				if (!r.ok) throw new Error(`HTTP ${r.status}`);
+				ST.data = await r.json();
+				renderClubs(ST.data.teams);
+			} catch (e) {
+				grid.innerHTML = `<div class="error-card">
       <strong>Kon ${JSON_FILES[comp]} niet laden.</strong><br>
       Zorg dat het JSON bestand in dezelfde map staat als dit HTML bestand.<br>
       <small style="opacity:.6">${e.message}</small>
     </div>`;
-  }
-}
+			}
+		}
 
-// ─────────────────────────────────────────────────────────
-// RENDER CLUBS
-// ─────────────────────────────────────────────────────────
-function renderClubs(teams) {
-  $('clubs-grid').innerHTML = teams.map(t => `
+		// ─────────────────────────────────────────────────────────
+		// RENDER CLUBS
+		// ─────────────────────────────────────────────────────────
+		function renderClubs(teams) {
+			$('clubs-grid').innerHTML = teams.map(t => `
     <div class="club-card ${ST.club?.id === t.id ? 'selected' : ''}"
          data-id="${t.id}" onclick="selectClub('${t.id}')">
       <div class="club-crest">
         ${t.crest
-          ? `<img src="${t.crest}" alt="logo ${t.name}" title="${t.name}" onerror="this.parentElement.innerHTML='<div class=club-crest-fb>⚽</div>'">`
-          : '<div class="club-crest-fb">⚽</div>'}
+					? `<img src="${t.crest}" alt="logo ${t.name}" title="${t.name}" onerror="this.parentElement.innerHTML='<div class=club-crest-fb>⚽</div>'">`
+					: '<div class="club-crest-fb">⚽</div>'}
       </div>
       <div class="club-name">${t.name}</div>
       ${t.city ? `<div class="club-city">${t.city}</div>` : ''}
       <div class="club-check">✓</div>
     </div>`).join('');
-}
+		}
 
-// ─────────────────────────────────────────────────────────
-// SELECT CLUB
-// ─────────────────────────────────────────────────────────
-function selectClub(id) {
-  if (!ST.data) return;
-  ST.club   = ST.data.teams.find(t => t.id === id);
-    if (ST.club) {
+		// ─────────────────────────────────────────────────────────
+		// SELECT CLUB
+		// ─────────────────────────────────────────────────────────
+		function selectClub(id) {
+			if (!ST.data) return;
+			ST.club = ST.data.teams.find(t => t.id === id);
+			if (ST.club) {
 
-    const slug = slugify(ST.club.name);
+				const slug = slugify(ST.club.name);
 
-    window.history.replaceState(
-      {},
-      '',
-      `/${ST.comp}/${slug}`
-    );
+				window.history.replaceState(
+					{},
+					'',
+					`/${ST.comp}/${slug}`
+				);
 
-    document.title =
-      `${ST.club.name} Speelschema ${ST.data.competition.season} | Voetbalkalender`;
+				document.title =
+					`${ST.club.name} Speelschema ${ST.data.competition.season} | Voetbalkalender`;
 
-    const metaDescription =
-      document.querySelector('meta[name="description"]');
+				const metaDescription =
+					document.querySelector('meta[name="description"]');
 
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        'content',
-        `Download het speelschema van ${ST.club.name} direct naar je agenda.`
-      );
-    }
-  }
-  ST.filter = 'all';
-  ST.showAll = false;
-  if (!ST.club) return;
+				if (metaDescription) {
+					metaDescription.setAttribute(
+						'content',
+						`Download het speelschema van ${ST.club.name} direct naar je agenda.`
+					);
+				}
+			}
+			ST.filter = 'all';
+			ST.showAll = false;
+			if (!ST.club) return;
 
-  // highlight
-  document.querySelectorAll('.club-card')
-    .forEach(el => el.classList.toggle('selected', el.dataset.id === id));
+			// highlight
+			document.querySelectorAll('.club-card')
+				.forEach(el => el.classList.toggle('selected', el.dataset.id === id));
 
-  // gather matches for this club
-  ST.matches = ST.data.fixtures
-    .filter(f => f.homeTeam === id || f.awayTeam === id)
-    .map(f => ({
-      date:        f.date,
-      home:        teamName(f.homeTeam),
-      away:        teamName(f.awayTeam),
-      homeId:      f.homeTeam,
-      awayId:      f.awayTeam,
-      competition: f.competition,
-      venue:       f.venue || '',
-      isHome:      f.homeTeam === id,
-    }))
-    .sort((a, b) => new Date(a.date) - new Date(b.date));
+			// gather matches for this club
+			ST.matches = ST.data.fixtures
+				.filter(f => f.homeTeam === id || f.awayTeam === id)
+				.map(f => ({
+					date: f.date,
+					home: teamName(f.homeTeam),
+					away: teamName(f.awayTeam),
+					homeId: f.homeTeam,
+					awayId: f.awayTeam,
+					competition: f.competition,
+					venue: f.venue || '',
+					isHome: f.homeTeam === id,
+				}))
+				.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-  updateFilterBar();
-  showDownload();
+			updateFilterBar();
+			showDownload();
 
-  setTimeout(() => $('filter-bar').scrollIntoView({ behavior:'smooth', block:'start' }), 100);
-}
+			setTimeout(() => $('filter-bar').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+		}
 
-function teamName(id) {
-  const t = ST.data?.teams.find(t => t.id === id);
-  return t ? t.name : id;
-}
+		function teamName(id) {
+			const t = ST.data?.teams.find(t => t.id === id);
+			return t ? t.name : id;
+		}
 
-// ─────────────────────────────────────────────────────────
-// FILTER BAR
-// ─────────────────────────────────────────────────────────
-function updateFilterBar() {
-  const homeCount = ST.matches.filter(m => m.isHome).length;
-  const allCount  = ST.matches.length;
+		// ─────────────────────────────────────────────────────────
+		// FILTER BAR
+		// ─────────────────────────────────────────────────────────
+		function updateFilterBar() {
+			const homeCount = ST.matches.filter(m => m.isHome).length;
+			const allCount = ST.matches.length;
 
-  $('fsw-count-all').textContent  = allCount;
-  $('fsw-count-home').textContent = homeCount;
+			$('fsw-count-all').textContent = allCount;
+			$('fsw-count-home').textContent = homeCount;
 
-  // sync active state
-  ['all','home'].forEach(f => {
-    document.querySelector(`[data-filter="${f}"]`)
-      .classList.toggle('active', ST.filter === f);
-  });
+			// sync active state
+			['all', 'home'].forEach(f => {
+				document.querySelector(`[data-filter="${f}"]`)
+					.classList.toggle('active', ST.filter === f);
+			});
 
-  showFilter();
-}
+			showFilter();
+		}
 
-function showFilter() {
-  $('filter-bar').classList.add('visible');
-  $('filter-step-label').style.display = 'flex';
-}
+		function showFilter() {
+			$('filter-bar').classList.add('visible');
+			$('filter-step-label').style.display = 'flex';
+		}
 
-function hideFilter() {
-  $('filter-bar').classList.remove('visible');
-  $('filter-step-label').style.display = 'none';
-}
+		function hideFilter() {
+			$('filter-bar').classList.remove('visible');
+			$('filter-step-label').style.display = 'none';
+		}
 
-// filter switch clicks
-document.querySelectorAll('.fsw-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    ST.filter  = btn.dataset.filter;
-    ST.showAll = false;
-    updateFilterBar();
-    renderMatches();
-    updateSelStat();
-  });
-});
+		// filter switch clicks
+		document.querySelectorAll('.fsw-btn').forEach(btn => {
+			btn.addEventListener('click', () => {
+				ST.filter = btn.dataset.filter;
+				ST.showAll = false;
+				updateFilterBar();
+				renderMatches();
+				updateSelStat();
+			});
+		});
 
-// ─────────────────────────────────────────────────────────
-// RENDER MATCHES
-// ─────────────────────────────────────────────────────────
-function filteredMatches() {
-  return ST.filter === 'home'
-    ? ST.matches.filter(m => m.isHome)
-    : ST.matches;
-}
+		// ─────────────────────────────────────────────────────────
+		// RENDER MATCHES
+		// ─────────────────────────────────────────────────────────
+		function filteredMatches() {
+			return ST.filter === 'home'
+				? ST.matches.filter(m => m.isHome)
+				: ST.matches;
+		}
 
-function renderMatches() {
-  const matches = filteredMatches();
-  const visible = ST.showAll ? matches : matches.slice(0, 7);
+		function renderMatches() {
+			const matches = filteredMatches();
+			const visible = ST.showAll ? matches : matches.slice(0, 7);
 
-  if (!matches.length) {
-    $('match-list').innerHTML = `<div class="no-matches">Geen wedstrijden gevonden voor dit filter.</div>`;
-    $('show-more-btn').style.display = 'none';
-    return;
-  }
+			if (!matches.length) {
+				$('match-list').innerHTML = `<div class="no-matches">Geen wedstrijden gevonden voor dit filter.</div>`;
+				$('show-more-btn').style.display = 'none';
+				return;
+			}
 
-  $('match-list').innerHTML = visible.map(m => `
+			$('match-list').innerHTML = visible.map(m => `
     <div class="match-row">
       <div class="match-date">${fmt(m.date)} <span style="opacity:.5">${fmtTime(m.date)}</span></div>
       <div class="match-teams">
@@ -343,272 +357,273 @@ function renderMatches() {
       <div class="match-comp">${m.competition}</div>
     </div>`).join('');
 
-  const more = matches.length > 7;
-  const btn  = $('show-more-btn');
-  btn.style.display = more && !ST.showAll ? 'block' : 'none';
-  btn.textContent   = `Toon alle ${matches.length} wedstrijden ↓`;
+			const more = matches.length > 7;
+			const btn = $('show-more-btn');
+			btn.style.display = more && !ST.showAll ? 'block' : 'none';
+			btn.textContent = `Toon alle ${matches.length} wedstrijden ↓`;
 
-  // update mode tag
-  $('mode-tag').textContent = ST.filter === 'home' ? 'Alleen thuis' : 'Alle';
-}
+			// update mode tag
+			$('mode-tag').textContent = ST.filter === 'home' ? 'Alleen thuis' : 'Alle';
+		}
 
-$('show-more-btn').addEventListener('click', () => {
-  ST.showAll = true;
-  renderMatches();
-});
+		$('show-more-btn').addEventListener('click', () => {
+			ST.showAll = true;
+			renderMatches();
+		});
 
-// ─────────────────────────────────────────────────────────
-// DOWNLOAD SECTION
-// ─────────────────────────────────────────────────────────
-function showDownload() {
-  const dl = $('dl-section');
-  dl.classList.add('visible');
+		// ─────────────────────────────────────────────────────────
+		// DOWNLOAD SECTION
+		// ─────────────────────────────────────────────────────────
+		function showDownload() {
+			const dl = $('dl-section');
+			dl.classList.add('visible');
 
-  // crest
-  const sc = $('sel-crest');
-  sc.innerHTML = ST.club.crest
-    ? `<img src="${ST.club.crest}" alt="${ST.club.name}" onerror="this.outerHTML='<span style=font-size:40px>⚽</span>'" style="max-width:52px;max-height:52px;object-fit:contain">`
-    : '<span style="font-size:40px">⚽</span>';
+			// crest
+			const sc = $('sel-crest');
+			sc.innerHTML = ST.club.crest
+				? `<img src="${ST.club.crest}" alt="${ST.club.name}" onerror="this.outerHTML='<span style=font-size:40px>⚽</span>'" style="max-width:52px;max-height:52px;object-fit:contain">`
+				: '<span style="font-size:40px">⚽</span>';
 
-  const compLabels = { eredivisie:'Eredivisie · Heren', kkd:'Keuken Kampioen Divisie', vrouwen:'Eredivisie Vrouwen' };
-  $('sel-name').textContent = ST.club.name;
-  $('sel-meta').textContent = `${compLabels[ST.comp]} · ${ST.data.competition.season}`;
+			const compLabels = { eredivisie: 'Eredivisie · Heren', kkd: 'Keuken Kampioen Divisie', vrouwen: 'Eredivisie Vrouwen' };
+			$('sel-name').textContent = ST.club.name;
+			$('sel-meta').textContent = `${compLabels[ST.comp]} · ${ST.data.competition.season}`;
 
-  updateSelStat();
-  renderMatches();
-}
+			updateSelStat();
+			renderMatches();
+		}
 
-function updateSelStat() {
-  const n = filteredMatches().length;
-  $('sel-count').textContent     = n;
-  $('sel-count-lbl').textContent = ST.filter === 'home' ? 'Thuiswedstrijden' : 'Wedstrijden';
-}
+		function updateSelStat() {
+			const n = filteredMatches().length;
+			$('sel-count').textContent = n;
+			$('sel-count-lbl').textContent = ST.filter === 'home' ? 'Thuiswedstrijden' : 'Wedstrijden';
+		}
 
-function hideDownload() {
-  $('dl-section').classList.remove('visible');
-  ST.club    = null;
-  ST.matches = [];
-}
+		function hideDownload() {
+			$('dl-section').classList.remove('visible');
+			ST.club = null;
+			ST.matches = [];
+		}
 
-// ─────────────────────────────────────────────────────────
-// ICS GENERATOR (RFC5545 compatible)
-// ─────────────────────────────────────────────────────────
+		// ─────────────────────────────────────────────────────────
+		// ICS GENERATOR (RFC5545 compatible)
+		// ─────────────────────────────────────────────────────────
 
-function pz(n) {
-  return String(n).padStart(2, '0');
-}
+		function pz(n) {
+			return String(n).padStart(2, '0');
+		}
 
-// UTC timestamp (voor DTSTAMP)
-function toICSUTC(date) {
-  return (
-    date.getUTCFullYear() +
-    pz(date.getUTCMonth() + 1) +
-    pz(date.getUTCDate()) +
-    'T' +
-    pz(date.getUTCHours()) +
-    pz(date.getUTCMinutes()) +
-    pz(date.getUTCSeconds()) +
-    'Z'
-  );
-}
+		// UTC timestamp (voor DTSTAMP)
+		function toICSUTC(date) {
+			return (
+				date.getUTCFullYear() +
+				pz(date.getUTCMonth() + 1) +
+				pz(date.getUTCDate()) +
+				'T' +
+				pz(date.getUTCHours()) +
+				pz(date.getUTCMinutes()) +
+				pz(date.getUTCSeconds()) +
+				'Z'
+			);
+		}
 
-// Lokale tijd Europe/Amsterdam
-function toICSLocal(date) {
-  return (
-    date.getFullYear() +
-    pz(date.getMonth() + 1) +
-    pz(date.getDate()) +
-    'T' +
-    pz(date.getHours()) +
-    pz(date.getMinutes()) +
-    pz(date.getSeconds())
-  );
-}
+		// Lokale tijd Europe/Amsterdam
+		function toICSLocal(date) {
+			return (
+				date.getFullYear() +
+				pz(date.getMonth() + 1) +
+				pz(date.getDate()) +
+				'T' +
+				pz(date.getHours()) +
+				pz(date.getMinutes()) +
+				pz(date.getSeconds())
+			);
+		}
 
-// RFC5545 escaping
-function escapeICS(text = '') {
-  return String(text)
-    .replace(/\\/g, '\\\\')
-    .replace(/;/g, '\\;')
-    .replace(/,/g, '\\,')
-    .replace(/\r?\n/g, '\\n');
-}
+		// RFC5545 escaping
+		function escapeICS(text = '') {
+			return String(text)
+				.replace(/\\/g, '\\\\')
+				.replace(/;/g, '\\;')
+				.replace(/,/g, '\\,')
+				.replace(/\r?\n/g, '\\n');
+		}
 
-// RFC5545 line folding (75 octets)
-function foldLine(line) {
-  if (!line) return '';
+		// RFC5545 line folding (75 octets)
+		function foldLine(line) {
+			if (!line) return '';
 
-  const maxLength = 73;
-  let result = '';
+			const maxLength = 73;
+			let result = '';
 
-  while (line.length > maxLength) {
-    result += line.slice(0, maxLength) + '\r\n ';
-    line = line.slice(maxLength);
-  }
+			while (line.length > maxLength) {
+				result += line.slice(0, maxLength) + '\r\n ';
+				line = line.slice(maxLength);
+			}
 
-  result += line;
+			result += line;
 
-  return result;
-}
+			return result;
+		}
 
-function buildICS(matches, clubName, filterLabel) {
+		function buildICS(matches, clubName, filterLabel) {
 
-  const calendarName =
-    filterLabel === 'home'
-      ? `${clubName} Thuiswedstrijden`
-      : `${clubName} Speelschema`;
+			const calendarName =
+				filterLabel === 'home'
+					? `${clubName} Thuiswedstrijden`
+					: `${clubName} Speelschema`;
 
-  const nowStamp = toICSUTC(new Date());
+			const nowStamp = toICSUTC(new Date());
 
-  const lines = [
-    'BEGIN:VCALENDAR',
-    'VERSION:2.0',
-    'PRODID:-//Voetbalkalender//NL',
-    'CALSCALE:GREGORIAN',
-    'METHOD:PUBLISH',
+			const lines = [
+				'BEGIN:VCALENDAR',
+				'VERSION:2.0',
+				'PRODID:-//Voetbalkalender//NL',
+				'CALSCALE:GREGORIAN',
+				'METHOD:PUBLISH',
 
-    `X-WR-CALNAME:${escapeICS(calendarName)}`,
-    'X-WR-TIMEZONE:Europe/Amsterdam',
+				`X-WR-CALNAME:${escapeICS(calendarName)}`,
+				'X-WR-TIMEZONE:Europe/Amsterdam',
 
-    // Timezone
-    'BEGIN:VTIMEZONE',
-    'TZID:Europe/Amsterdam',
-    'X-LIC-LOCATION:Europe/Amsterdam',
+				// Timezone
+				'BEGIN:VTIMEZONE',
+				'TZID:Europe/Amsterdam',
+				'X-LIC-LOCATION:Europe/Amsterdam',
 
-    'BEGIN:DAYLIGHT',
-    'TZOFFSETFROM:+0100',
-    'TZOFFSETTO:+0200',
-    'TZNAME:CEST',
-    'DTSTART:19700329T020000',
-    'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU',
-    'END:DAYLIGHT',
+				'BEGIN:DAYLIGHT',
+				'TZOFFSETFROM:+0100',
+				'TZOFFSETTO:+0200',
+				'TZNAME:CEST',
+				'DTSTART:19700329T020000',
+				'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU',
+				'END:DAYLIGHT',
 
-    'BEGIN:STANDARD',
-    'TZOFFSETFROM:+0200',
-    'TZOFFSETTO:+0100',
-    'TZNAME:CET',
-    'DTSTART:19701025T030000',
-    'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU',
-    'END:STANDARD',
+				'BEGIN:STANDARD',
+				'TZOFFSETFROM:+0200',
+				'TZOFFSETTO:+0100',
+				'TZNAME:CET',
+				'DTSTART:19701025T030000',
+				'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU',
+				'END:STANDARD',
 
-    'END:VTIMEZONE'
-  ];
+				'END:VTIMEZONE'
+			];
 
-  matches.forEach((m, index) => {
+			matches.forEach((m, index) => {
 
-    const start = new Date(m.date);
+				const start = new Date(m.date);
 
-    // standaard wedstrijdduur
-    const end = new Date(start.getTime() + (2 * 60 * 60 * 1000));
+				// standaard wedstrijdduur
+				const end = new Date(start.getTime() + (2 * 60 * 60 * 1000));
 
-    const uid =
-      `${clubName.replace(/[^a-z0-9]/gi, '-')}-${start.getTime()}-${index}@voetbalkalender.nl`;
+				const uid =
+					`${clubName.replace(/[^a-z0-9]/gi, '-')}-${start.getTime()}-${index}@voetbalkalender.nl`;
 
-    const eventLines = [
-      'BEGIN:VEVENT',
+				const eventLines = [
+					'BEGIN:VEVENT',
 
-      `UID:${uid}`,
-      `DTSTAMP:${nowStamp}`,
+					`UID:${uid}`,
+					`DTSTAMP:${nowStamp}`,
 
-      `DTSTART;TZID=Europe/Amsterdam:${toICSLocal(start)}`,
-      `DTEND;TZID=Europe/Amsterdam:${toICSLocal(end)}`,
+					`DTSTART;TZID=Europe/Amsterdam:${toICSLocal(start)}`,
+					`DTEND;TZID=Europe/Amsterdam:${toICSLocal(end)}`,
 
-      `SUMMARY:${escapeICS(`${m.home} - ${m.away}`)}`,
+					`SUMMARY:${escapeICS(`${m.home} - ${m.away}`)}`,
 
-      `DESCRIPTION:${escapeICS(
-        `${m.competition}${m.venue ? ' | ' + m.venue : ''}`
-      )}`,
+					`DESCRIPTION:${escapeICS(
+						`${m.competition}${m.venue ? ' | ' + m.venue : ''}`
+					)}`,
 
-      `CATEGORIES:${escapeICS(`Voetbal,${m.competition}`)}`,
+					`CATEGORIES:${escapeICS(`Voetbal,${m.competition}`)}`,
 
-      'STATUS:CONFIRMED',
-      'TRANSP:OPAQUE',
-    ];
+					'STATUS:CONFIRMED',
+					'TRANSP:OPAQUE',
+				];
 
-    if (m.venue) {
-      eventLines.push(
-        `LOCATION:${escapeICS(m.venue)}`
-      );
-    }
+				if (m.venue) {
+					eventLines.push(
+						`LOCATION:${escapeICS(m.venue)}`
+					);
+				}
 
-    eventLines.push('END:VEVENT');
+				eventLines.push('END:VEVENT');
 
-    eventLines.forEach(line => {
-      lines.push(foldLine(line));
-    });
+				eventLines.forEach(line => {
+					lines.push(foldLine(line));
+				});
 
-  });
+			});
 
-  lines.push('END:VCALENDAR');
+			lines.push('END:VCALENDAR');
 
-  return lines.join('\r\n');
-}
+			return lines.join('\r\n');
+		}
 
-function doDownload() {
+		function doDownload() {
 
-  if (!ST.club) return;
+			if (!ST.club) return;
 
-  const url =
-    `/api/calendar?` +
-    `comp=${encodeURIComponent(ST.comp)}` +
-    `&club=${encodeURIComponent(ST.club.id)}` +
-    `&filter=${encodeURIComponent(ST.filter)}`;
+			const url =
+				`/api/calendar?` +
+				`comp=${encodeURIComponent(ST.comp)}` +
+				`&club=${encodeURIComponent(ST.club.id)}` +
+				`&filter=${encodeURIComponent(ST.filter)}`;
 
-  window.location.href = url;
-}
-$('btn-google').addEventListener('click', doDownload);
+			window.location.href = url;
+		}
+		$('btn-google').addEventListener('click', doDownload);
 
-// ─────────────────────────────────────────────────────────
-// COMPETITION TABS
-// ─────────────────────────────────────────────────────────
-$('comp-tabs').addEventListener('click', e => {
-  const tab = e.target.closest('.comp-tab');
-  if (!tab) return;
-  const comp = tab.dataset.comp;
-  if (comp === ST.comp) return;
+		// ─────────────────────────────────────────────────────────
+		// COMPETITION TABS
+		// ─────────────────────────────────────────────────────────
+		$('comp-tabs').addEventListener('click', e => {
+			const tab = e.target.closest('.comp-tab');
+			if (!tab) return;
+			const comp = tab.dataset.comp;
+			if (comp === ST.comp) return;
 
-  document.querySelectorAll('.comp-tab').forEach(t => t.classList.remove('active'));
-  tab.classList.add('active');
-  ST.comp = comp;
+			document.querySelectorAll('.comp-tab').forEach(t => t.classList.remove('active'));
+			tab.classList.add('active');
+			ST.comp = comp;
 
-  loadCompetition(comp);
-});
+			loadCompetition(comp);
+		});
 
-// ─────────────────────────────────────────────────────────
-// INIT
-// ─────────────────────────────────────────────────────────
-async function init() {
+		// ─────────────────────────────────────────────────────────
+		// INIT
+		// ─────────────────────────────────────────────────────────
+		async function init() {
 
-  const route = getRouteInfo();
+			const route = getRouteInfo();
 
-  if (route?.comp && JSON_FILES[route.comp]) {
-    ST.comp = route.comp;
-  }
+			if (route?.comp && JSON_FILES[route.comp]) {
+				ST.comp = route.comp;
+			}
 
-  document
-    .querySelectorAll('.comp-tab')
-    .forEach(tab => {
-      tab.classList.toggle(
-        'active',
-        tab.dataset.comp === ST.comp
-      );
-    });
+			document
+				.querySelectorAll('.comp-tab')
+				.forEach(tab => {
+					tab.classList.toggle(
+						'active',
+						tab.dataset.comp === ST.comp
+					);
+				});
 
-  await loadCompetition(ST.comp);
+			await loadCompetition(ST.comp);
 
-  if (!route?.slug) return;
+			if (!route?.slug) return;
 
-  const club =
-    ST.data.teams.find(
-      t => slugify(t.name) === route.slug
-    );
+			const club =
+				ST.data.teams.find(
+					t => slugify(t.name) === route.slug
+				);
 
-  if (club) {
-    selectClub(club.id);
-  }
-}
+			if (club) {
+				selectClub(club.id);
+			}
+		}
 
-init();
-</script>
+		init();
+	</script>
 </body>
+
 </html>
