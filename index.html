@@ -341,65 +341,171 @@ function hideDownload() {
 }
 
 // ─────────────────────────────────────────────────────────
-// ICS GENERATOR
+// ICS GENERATOR (RFC5545 compatible)
 // ─────────────────────────────────────────────────────────
-function pz(n) { return String(n).padStart(2,'0'); }
 
-function toICS(d) {
-  const u = new Date(d);
-  return `${u.getUTCFullYear()}${pz(u.getUTCMonth()+1)}${pz(u.getUTCDate())}T${pz(u.getUTCHours())}${pz(u.getUTCMinutes())}00Z`;
+function pz(n) {
+  return String(n).padStart(2, '0');
+}
+
+// UTC timestamp (voor DTSTAMP)
+function toICSUTC(date) {
+  return (
+    date.getUTCFullYear() +
+    pz(date.getUTCMonth() + 1) +
+    pz(date.getUTCDate()) +
+    'T' +
+    pz(date.getUTCHours()) +
+    pz(date.getUTCMinutes()) +
+    pz(date.getUTCSeconds()) +
+    'Z'
+  );
+}
+
+// Lokale tijd Europe/Amsterdam
+function toICSLocal(date) {
+  return (
+    date.getFullYear() +
+    pz(date.getMonth() + 1) +
+    pz(date.getDate()) +
+    'T' +
+    pz(date.getHours()) +
+    pz(date.getMinutes()) +
+    pz(date.getSeconds())
+  );
+}
+
+// RFC5545 escaping
+function escapeICS(text = '') {
+  return String(text)
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g, '\\;')
+    .replace(/,/g, '\\,')
+    .replace(/\r?\n/g, '\\n');
+}
+
+// RFC5545 line folding (75 octets)
+function foldLine(line) {
+  if (!line) return '';
+
+  const maxLength = 73;
+  let result = '';
+
+  while (line.length > maxLength) {
+    result += line.slice(0, maxLength) + '\r\n ';
+    line = line.slice(maxLength);
+  }
+
+  result += line;
+
+  return result;
 }
 
 function buildICS(matches, clubName, filterLabel) {
-  const calName = filterLabel === 'home'
-    ? `${clubName} · Thuiswedstrijden`
-    : `${clubName} · Speelschema`;
+
+  const calendarName =
+    filterLabel === 'home'
+      ? `${clubName} Thuiswedstrijden`
+      : `${clubName} Speelschema`;
+
+  const nowStamp = toICSUTC(new Date());
 
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Voetbalkalender NL//NL',
-    `X-WR-CALNAME:${calName}`,
-    'X-WR-TIMEZONE:Europe/Amsterdam',
+    'PRODID:-//Voetbalkalender//NL',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
+
+    `X-WR-CALNAME:${escapeICS(calendarName)}`,
+    'X-WR-TIMEZONE:Europe/Amsterdam',
+
+    // Timezone
+    'BEGIN:VTIMEZONE',
+    'TZID:Europe/Amsterdam',
+    'X-LIC-LOCATION:Europe/Amsterdam',
+
+    'BEGIN:DAYLIGHT',
+    'TZOFFSETFROM:+0100',
+    'TZOFFSETTO:+0200',
+    'TZNAME:CEST',
+    'DTSTART:19700329T020000',
+    'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU',
+    'END:DAYLIGHT',
+
+    'BEGIN:STANDARD',
+    'TZOFFSETFROM:+0200',
+    'TZOFFSETTO:+0100',
+    'TZNAME:CET',
+    'DTSTART:19701025T030000',
+    'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU',
+    'END:STANDARD',
+
+    'END:VTIMEZONE'
   ];
 
-  matches.forEach((m, i) => {
+  matches.forEach((m, index) => {
+
     const start = new Date(m.date);
-    const end   = new Date(start.getTime() + 7200000); // +2h
-    const loc   = m.venue ? `\r\nLOCATION:${m.venue}` : '';
-    lines.push(
+
+    // standaard wedstrijdduur
+    const end = new Date(start.getTime() + (2 * 60 * 60 * 1000));
+
+    const uid =
+      `${clubName.replace(/[^a-z0-9]/gi, '-')}-${start.getTime()}-${index}@voetbalkalender.nl`;
+
+    const eventLines = [
       'BEGIN:VEVENT',
-      `UID:vcnl-${clubName.replace(/\W/g,'-')}-${i}-${start.getTime()}@voetbalkalender`,
-      `DTSTART:${toICS(start)}`,
-      `DTEND:${toICS(end)}`,
-      `SUMMARY:${m.home} - ${m.away}`,
-      `DESCRIPTION:${m.competition}${m.venue ? ' · ' + m.venue : ''}`,
-      `CATEGORIES:Voetbal,${m.competition}` + loc,
-      'END:VEVENT',
-    );
+
+      `UID:${uid}`,
+      `DTSTAMP:${nowStamp}`,
+
+      `DTSTART;TZID=Europe/Amsterdam:${toICSLocal(start)}`,
+      `DTEND;TZID=Europe/Amsterdam:${toICSLocal(end)}`,
+
+      `SUMMARY:${escapeICS(`${m.home} - ${m.away}`)}`,
+
+      `DESCRIPTION:${escapeICS(
+        `${m.competition}${m.venue ? ' | ' + m.venue : ''}`
+      )}`,
+
+      `CATEGORIES:${escapeICS(`Voetbal,${m.competition}`)}`,
+
+      'STATUS:CONFIRMED',
+      'TRANSP:OPAQUE',
+    ];
+
+    if (m.venue) {
+      eventLines.push(
+        `LOCATION:${escapeICS(m.venue)}`
+      );
+    }
+
+    eventLines.push('END:VEVENT');
+
+    eventLines.forEach(line => {
+      lines.push(foldLine(line));
+    });
+
   });
 
   lines.push('END:VCALENDAR');
+
   return lines.join('\r\n');
 }
 
 function doDownload() {
-  const matches = filteredMatches();
-  if (!ST.club || !matches.length) return;
 
-  const suffix = ST.filter === 'home' ? '-thuis' : '';
-  const ics    = buildICS(matches, ST.club.name, ST.filter);
-  const blob   = new Blob([ics], { type:'text/calendar;charset=utf-8' });
-  const url    = URL.createObjectURL(blob);
-  const a      = document.createElement('a');
-  a.href       = url;
-  a.download   = `${ST.club.name.replace(/\s+/g,'-').toLowerCase()}${suffix}-${ST.data.competition.season.replace('/','')}.ics`;
-  a.click();
-  URL.revokeObjectURL(url);
+  if (!ST.club) return;
+
+  const url =
+    `/api/calendar?` +
+    `comp=${encodeURIComponent(ST.comp)}` +
+    `&club=${encodeURIComponent(ST.club.id)}` +
+    `&filter=${encodeURIComponent(ST.filter)}`;
+
+  window.location.href = url;
 }
-
 $('btn-google').addEventListener('click', doDownload);
 
 // ─────────────────────────────────────────────────────────
