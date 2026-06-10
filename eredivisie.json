@@ -26,30 +26,2133 @@
     { "id": "willem2",   "name": "Willem II",       "city": "Tilburg",    "crest": "/images/crest/willem-ii.png" }
   ],
   "fixtures": [
-    { "date": "2025-08-08T18:45:00", "homeTeam": "ajax",       "awayTeam": "psv",        "competition": "Vriendenloterij Eredivisie", "venue": "Johan Cruijff ArenA" },
-    { "date": "2025-08-08T20:45:00", "homeTeam": "feyenoord",  "awayTeam": "az",         "competition": "Vriendenloterij Eredivisie", "venue": "Feyenoord Stadion" },
-    { "date": "2025-08-09T16:30:00", "homeTeam": "twente",     "awayTeam": "utrecht",    "competition": "Vriendenloterij Eredivisie", "venue": "De Grolsch Veste" },
-    { "date": "2025-08-09T18:45:00", "homeTeam": "heerenveen", "awayTeam": "groningen",  "competition": "Vriendenloterij Eredivisie", "venue": "Abe Lenstra Stadion" },
-    { "date": "2025-08-09T20:45:00", "homeTeam": "nec",        "awayTeam": "rkc",        "competition": "Vriendenloterij Eredivisie", "venue": "Goffertstadion" },
-    { "date": "2025-08-10T12:15:00", "homeTeam": "sparta",     "awayTeam": "excelsior",  "competition": "Vriendenloterij Eredivisie", "venue": "Het Kasteel" },
-    { "date": "2025-08-10T14:30:00", "homeTeam": "fortuna",    "awayTeam": "goahead",    "competition": "Vriendenloterij Eredivisie", "venue": "Fortuna Sittard Stadion" },
-    { "date": "2025-08-10T16:45:00", "homeTeam": "ado",        "awayTeam": "nac",        "competition": "Vriendenloterij Eredivisie", "venue": "Cars Jeans Stadion" },
-    { "date": "2025-08-15T18:45:00", "homeTeam": "psv",        "awayTeam": "feyenoord",  "competition": "Vriendenloterij Eredivisie", "venue": "Philips Stadion" },
-    { "date": "2025-08-15T20:45:00", "homeTeam": "az",         "awayTeam": "ajax",       "competition": "Vriendenloterij Eredivisie", "venue": "AFAS Stadion" },
-    { "date": "2025-08-16T16:30:00", "homeTeam": "groningen",  "awayTeam": "twente",     "competition": "Vriendenloterij Eredivisie", "venue": "Euroborg" },
-    { "date": "2025-08-16T18:45:00", "homeTeam": "utrecht",    "awayTeam": "heerenveen", "competition": "Vriendenloterij Eredivisie", "venue": "Galgenwaard" },
-    { "date": "2025-08-16T20:45:00", "homeTeam": "rkc",        "awayTeam": "sparta",     "competition": "Vriendenloterij Eredivisie", "venue": "Mandemakers Stadion" },
-    { "date": "2025-08-17T12:15:00", "homeTeam": "excelsior",  "awayTeam": "nec",        "competition": "Vriendenloterij Eredivisie", "venue": "Van Donge en De Roo Stadion" },
-    { "date": "2025-08-17T14:30:00", "homeTeam": "goahead",    "awayTeam": "fortuna",    "competition": "Vriendenloterij Eredivisie", "venue": "De Adelaarshorst" },
-    { "date": "2025-08-17T16:45:00", "homeTeam": "nac",        "awayTeam": "almere",     "competition": "Vriendenloterij Eredivisie", "venue": "Rat Verlegh Stadion" },
-    { "date": "2025-08-22T18:45:00", "homeTeam": "ajax",       "awayTeam": "twente",     "competition": "Vriendenloterij Eredivisie", "venue": "Johan Cruijff ArenA" },
-    { "date": "2025-08-22T20:45:00", "homeTeam": "psv",        "awayTeam": "groningen",  "competition": "Vriendenloterij Eredivisie", "venue": "Philips Stadion" },
-    { "date": "2025-08-23T16:30:00", "homeTeam": "feyenoord",  "awayTeam": "utrecht",    "competition": "Vriendenloterij Eredivisie", "venue": "Feyenoord Stadion" },
-    { "date": "2025-09-13T16:30:00", "homeTeam": "ajax",       "awayTeam": "feyenoord",  "competition": "Vriendenloterij Eredivisie", "venue": "Johan Cruijff ArenA" },
-    { "date": "2025-09-13T18:45:00", "homeTeam": "psv",        "awayTeam": "az",         "competition": "Vriendenloterij Eredivisie", "venue": "Philips Stadion" },
-    { "date": "2025-10-19T16:30:00", "homeTeam": "feyenoord",  "awayTeam": "ajax",       "competition": "Vriendenloterij Eredivisie", "venue": "Feyenoord Stadion" },
-    { "date": "2025-11-02T16:30:00", "homeTeam": "az",         "awayTeam": "psv",        "competition": "Vriendenloterij Eredivisie", "venue": "AFAS Stadion" },
-    { "date": "2025-11-30T16:30:00", "homeTeam": "ajax",       "awayTeam": "az",         "competition": "Vriendenloterij Eredivisie", "venue": "Johan Cruijff ArenA" },
-    { "date": "2025-12-14T16:30:00", "homeTeam": "psv",        "awayTeam": "ajax",       "competition": "Vriendenloterij Eredivisie", "venue": "Philips Stadion" }
+    {
+      "date": "2026-08-07T20:00:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-08-08T16:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-08-08T18:45:00",
+      "homeTeam": "goahead",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-08-08T20:00:00",
+      "homeTeam": "psv",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-08-08T21:00:00",
+      "homeTeam": "az",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-08-09T12:15:00",
+      "homeTeam": "sparta",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-08-09T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-08-09T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-08-09T16:45:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-08-14T20:00:00",
+      "homeTeam": "telstar",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-08-15T16:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-08-15T18:45:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-08-15T20:00:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-08-15T21:00:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-08-16T12:15:00",
+      "homeTeam": "ado",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-08-16T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-08-16T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2026-08-16T16:45:00",
+      "homeTeam": "ajax",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-08-22T16:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-08-22T18:45:00",
+      "homeTeam": "nec",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-08-22T20:00:00",
+      "homeTeam": "sparta",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-08-22T21:00:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-08-23T12:15:00",
+      "homeTeam": "goahead",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-08-23T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-08-23T16:45:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-08-28T20:00:00",
+      "homeTeam": "groningen",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-08-29T16:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-08-29T18:45:00",
+      "homeTeam": "az",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-08-29T21:00:00",
+      "homeTeam": "pec",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-08-30T12:15:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-08-30T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-08-30T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-08-30T16:45:00",
+      "homeTeam": "telstar",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-08-30T20:00:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-09-04T20:00:00",
+      "homeTeam": "sparta",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-09-05T16:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-09-05T18:45:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-09-05T20:00:00",
+      "homeTeam": "ajax",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-09-05T21:00:00",
+      "homeTeam": "willem2",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-09-06T12:15:00",
+      "homeTeam": "groningen",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-09-06T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-09-06T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-09-06T16:45:00",
+      "homeTeam": "ado",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-09-11T20:00:00",
+      "homeTeam": "az",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-09-12T16:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2026-09-12T18:45:00",
+      "homeTeam": "goahead",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-09-12T20:00:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-09-12T21:00:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-09-13T12:15:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-09-13T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-09-13T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-09-13T16:45:00",
+      "homeTeam": "pec",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-09-18T20:00:00",
+      "homeTeam": "sparta",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-09-19T16:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-09-19T18:45:00",
+      "homeTeam": "groningen",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-09-19T20:00:00",
+      "homeTeam": "ajax",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-09-19T21:00:00",
+      "homeTeam": "willem2",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-09-20T12:15:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-09-20T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-09-20T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-09-20T16:45:00",
+      "homeTeam": "twente",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2026-10-10T16:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-10-10T18:45:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-10-10T18:45:00",
+      "homeTeam": "goahead",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-10-10T21:00:00",
+      "homeTeam": "ajax",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-10-10T21:00:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-10-11T12:15:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-10-11T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-10-11T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-10-11T16:45:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-10-16T20:00:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-10-17T16:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-10-17T18:45:00",
+      "homeTeam": "nec",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-10-17T20:00:00",
+      "homeTeam": "telstar",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-10-17T21:00:00",
+      "homeTeam": "sparta",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-10-18T12:15:00",
+      "homeTeam": "pec",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-10-18T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2026-10-18T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-10-18T16:45:00",
+      "homeTeam": "groningen",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-10-23T20:00:00",
+      "homeTeam": "goahead",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-10-24T16:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-10-24T18:45:00",
+      "homeTeam": "willem2",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-10-24T21:00:00",
+      "homeTeam": "ado",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-10-25T12:15:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-10-25T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-10-25T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-10-25T16:45:00",
+      "homeTeam": "sparta",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-10-25T20:00:00",
+      "homeTeam": "az",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-10-31T16:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-10-31T18:45:00",
+      "homeTeam": "psv",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-10-31T18:45:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-10-31T21:00:00",
+      "homeTeam": "ajax",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-10-31T21:00:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-11-01T12:15:00",
+      "homeTeam": "pec",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-11-01T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-11-01T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-11-01T16:45:00",
+      "homeTeam": "groningen",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-11-06T20:00:00",
+      "homeTeam": "willem2",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-11-07T16:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-11-07T18:45:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-11-07T20:00:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-11-07T21:00:00",
+      "homeTeam": "ado",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-11-08T12:15:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-11-08T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2026-11-08T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-11-08T16:45:00",
+      "homeTeam": "az",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-11-21T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-11-28T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2026-12-05T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2026-12-12T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2026-12-19T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-01-08T20:00:00",
+      "homeTeam": "twente",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-01-09T16:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-01-09T18:45:00",
+      "homeTeam": "pec",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-01-09T20:00:00",
+      "homeTeam": "willem2",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-01-09T21:00:00",
+      "homeTeam": "az",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-01-10T12:15:00",
+      "homeTeam": "nec",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-01-10T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-01-10T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-01-10T16:45:00",
+      "homeTeam": "groningen",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-01-16T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-01-23T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-01-29T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-02-13T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-02-20T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-02-27T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-03-06T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-03-13T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-03-20T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-04-03T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-04-10T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-04-24T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-05-01T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-05-08T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "ajax",
+      "awayTeam": "sparta",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Johan Cruijff ArenA"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "az",
+      "awayTeam": "pec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "AFAS Stadion"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "excelsior",
+      "awayTeam": "ado",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Van Donge en De Roo Stadion"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "groningen",
+      "awayTeam": "cambuur",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Euroborg"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "twente",
+      "awayTeam": "feyenoord",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Grolsch Veste"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "utrecht",
+      "awayTeam": "telstar",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Galgenwaard"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "fortuna",
+      "awayTeam": "willem2",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Fortuna Sittard Stadion"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "goahead",
+      "awayTeam": "heerenveen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "De Adelaarshorst"
+    },
+    {
+      "date": "2027-05-16T14:30:00",
+      "homeTeam": "psv",
+      "awayTeam": "nec",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Philips Stadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "ado",
+      "awayTeam": "az",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cars Jeans Stadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "feyenoord",
+      "awayTeam": "groningen",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Feyenoord Stadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "nec",
+      "awayTeam": "utrecht",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Goffertstadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "pec",
+      "awayTeam": "twente",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "MAC3PARK Stadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "cambuur",
+      "awayTeam": "ajax",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Cambuur Stadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "heerenveen",
+      "awayTeam": "psv",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Abe Lenstra Stadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "sparta",
+      "awayTeam": "fortuna",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Het Kasteel"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "telstar",
+      "awayTeam": "excelsior",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Rabobank IJmond Stadion"
+    },
+    {
+      "date": "2027-05-23T14:30:00",
+      "homeTeam": "willem2",
+      "awayTeam": "goahead",
+      "competition": "Vriendenloterij Eredivisie",
+      "venue": "Koning Willem II Stadion"
+    }
   ]
 }

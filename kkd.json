@@ -6,26 +6,1807 @@
     "logo": null
   },
   "teams": [
-    { "id": "almere",      "name": "Almere City",       "city": "Almere",     "crest": "images/crest/almere.png" },
-    { "id": "jong-az",     "name": "Jong AZ",          "city": "Alkmaar",    "crest": "images/crest/az.png" },
-    { "id": "den-bosch",   "name": "FC Den Bosch",     "city": "Den Bosch",  "crest": "images/crest/den-bosch.png" },
-    { "id": "dordrecht",   "name": "FC Dordrecht",     "city": "Dordrecht",  "crest": "images/crest/dordrecht.png" },
-    { "id": "emmen",       "name": "FC Emmen",         "city": "Emmen",      "crest": "images/crest/emmen.png" },
-    { "id": "fc-eindhoven","name": "FC Eindhoven",     "city": "Eindhoven",  "crest": "images/crest/eindhoven.png" },
-    { "id": "volendam",    "name": "FC Volendam",      "city": "Volendam",  "crest": "images/crest/volendam.png" },
-    { "id": "helmond",     "name": "Helmond Sport",    "city": "Helmond",    "crest": "images/crest/helmond-sport.png" },
-    { "id": "jong-ajax",   "name": "Jong Ajax",        "city": "Amsterdam",  "crest": "images/crest/ajax.png" },
-    { "id": "jong-psv",    "name": "Jong PSV",         "city": "Eindhoven",  "crest": "images/crest/psv.png" },
-    { "id": "maastricht",  "name": "MVV Maastricht",   "city": "Maastricht", "crest": "images/crest/maastricht.png" },
-    { "id": "nac",         "name": "NAC Breda",        "city": "Breda",      "crest": "images/crest/nac.png" },
-    { "id": "rkc",         "name": "RKC Waalwijk",     "city": "Waalwijk",   "crest": "images/crest/rkc.png" },
-    { "id": "roda",        "name": "Roda JC",          "city": "Kerkrade",   "crest": "images/crest/roda.png" },
-    { "id": "top-oss",     "name": "TOP Oss",          "city": "Oss",        "crest": "images/crest/top-oss.png" },
-    { "id": "vitesse",     "name": "Vitesse",          "city": "Arnhem",     "crest": "images/crest/vitesse.png" }
+    {
+      "id": "almere",
+      "name": "Almere City",
+      "city": "Almere",
+      "crest": "images/crest/almere.png"
+    },
+    {
+      "id": "jong-az",
+      "name": "Jong AZ",
+      "city": "Alkmaar",
+      "crest": "images/crest/az.png"
+    },
+    {
+      "id": "den-bosch",
+      "name": "FC Den Bosch",
+      "city": "Den Bosch",
+      "crest": "images/crest/den-bosch.png"
+    },
+    {
+      "id": "dordrecht",
+      "name": "FC Dordrecht",
+      "city": "Dordrecht",
+      "crest": "images/crest/dordrecht.png"
+    },
+    {
+      "id": "emmen",
+      "name": "FC Emmen",
+      "city": "Emmen",
+      "crest": "images/crest/emmen.png"
+    },
+    {
+      "id": "fc-eindhoven",
+      "name": "FC Eindhoven",
+      "city": "Eindhoven",
+      "crest": "images/crest/eindhoven.png"
+    },
+    {
+      "id": "volendam",
+      "name": "FC Volendam",
+      "city": "Volendam",
+      "crest": "images/crest/volendam.png"
+    },
+    {
+      "id": "helmond",
+      "name": "Helmond Sport",
+      "city": "Helmond",
+      "crest": "images/crest/helmond-sport.png"
+    },
+    {
+      "id": "jong-ajax",
+      "name": "Jong Ajax",
+      "city": "Amsterdam",
+      "crest": "images/crest/ajax.png"
+    },
+    {
+      "id": "jong-psv",
+      "name": "Jong PSV",
+      "city": "Eindhoven",
+      "crest": "images/crest/psv.png"
+    },
+    {
+      "id": "maastricht",
+      "name": "MVV Maastricht",
+      "city": "Maastricht",
+      "crest": "images/crest/maastricht.png"
+    },
+    {
+      "id": "nac",
+      "name": "NAC Breda",
+      "city": "Breda",
+      "crest": "images/crest/nac.png"
+    },
+    {
+      "id": "rkc",
+      "name": "RKC Waalwijk",
+      "city": "Waalwijk",
+      "crest": "images/crest/rkc.png"
+    },
+    {
+      "id": "roda",
+      "name": "Roda JC",
+      "city": "Kerkrade",
+      "crest": "images/crest/roda.png"
+    },
+    {
+      "id": "top-oss",
+      "name": "TOP Oss",
+      "city": "Oss",
+      "crest": "images/crest/top-oss.png"
+    },
+    {
+      "id": "vitesse",
+      "name": "Vitesse",
+      "city": "Arnhem",
+      "crest": "images/crest/vitesse.png"
+    },
+    {
+      "id": "de-graafschap",
+      "name": "De Graafschap",
+      "city": "Doetinchem",
+      "crest": "images/crest/de-graafschap.png"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles Almelo",
+      "city": "Almelo",
+      "crest": "images/crest/heracles.png"
+    },
+    {
+      "id": "jong-utrecht",
+      "name": "Jong FC Utrecht",
+      "city": "Utrecht",
+      "crest": "images/crest/utrecht.png"
+    },
+    {
+      "id": "vvv-venlo",
+      "name": "VVV-Venlo",
+      "city": "Venlo",
+      "crest": "images/crest/vvv-venlo.png"
+    }
   ],
-  "fixtures": [
-    { "date": "2025-08-08T19:00:00", "homeTeam": "nac",         "awayTeam": "willem2",    "competition": "Keuken Kampioen Divisie", "venue": "Rat Verlegh Stadion" },
-    { "date": "2025-08-08T19:00:00", "homeTeam": "volendam",    "awayTeam": "emmen",      "competition": "Keuken Kampioen Divisie", "venue": "Kras Stadion" },
-    { "date": "2025-08-09T15:00:00", "homeTeam": "roda",        "awayTeam": "ado",        "competition": "Keuken Kampioen Divisie", "venue": "Parkstad Limburg Stadion" }
+    "fixtures": [
+    {
+      "date": "2026-08-07T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-08-07T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-08-07T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-08-07T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-08-08T16:30:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-08-10T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-08-10T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2026-08-14T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-08-14T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-08-14T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-08-14T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-08-15T16:30:00",
+      "homeTeam": "volendam",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2026-08-17T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2026-08-21T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-08-21T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-08-21T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-08-21T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2026-08-21T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-08-21T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-08-22T16:30:00",
+      "homeTeam": "nac",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2026-08-24T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2026-08-28T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-08-28T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2026-08-28T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2026-08-28T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-08-28T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-08-28T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-08-31T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2026-09-04T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-09-04T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-09-04T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-09-04T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-09-05T16:30:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-09-06T16:45:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-09-07T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2026-09-11T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-09-11T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2026-09-11T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2026-09-11T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-09-12T16:30:00",
+      "homeTeam": "roda",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-09-13T16:45:00",
+      "homeTeam": "volendam",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2026-09-14T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2026-09-18T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-09-18T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-09-18T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2026-09-18T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-09-18T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-09-18T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-09-19T16:30:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-09-25T21:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-09-26T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-09-26T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-09-26T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2026-09-26T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-10-03T16:30:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-10-03T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-10-03T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-10-03T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-10-03T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-10-09T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-10-09T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-10-09T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-10-09T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2026-10-09T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-10-09T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-10-09T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2026-10-16T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-10-16T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-10-16T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2026-10-17T16:30:00",
+      "homeTeam": "emmen",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-10-18T12:15:00",
+      "homeTeam": "rkc",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-10-19T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2026-10-23T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-10-23T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-10-23T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-10-23T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-10-23T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-10-23T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-10-30T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-10-30T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2026-10-30T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-10-30T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-11-02T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2026-11-02T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2026-11-06T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-11-06T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-11-06T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2026-11-06T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-11-06T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-11-08T16:45:00",
+      "homeTeam": "emmen",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-11-14T16:30:00",
+      "homeTeam": "nac",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2026-11-14T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-11-14T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-11-14T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-11-15T14:30:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-11-20T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-11-20T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2026-11-20T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2026-11-20T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-11-20T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-11-21T16:30:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-11-23T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2026-11-27T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-11-27T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-11-27T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-11-27T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2026-11-28T16:30:00",
+      "homeTeam": "emmen",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-11-29T12:15:00",
+      "homeTeam": "volendam",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2026-12-04T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2026-12-04T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-12-04T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-12-04T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-12-06T12:15:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2026-12-06T16:45:00",
+      "homeTeam": "nac",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2026-12-11T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2026-12-11T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2026-12-11T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2026-12-11T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2026-12-11T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2026-12-11T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2026-12-18T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2026-12-18T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2026-12-18T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2026-12-18T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2026-12-18T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2026-12-18T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2026-12-18T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2026-12-21T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-01-08T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2027-01-08T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-01-09T16:30:00",
+      "homeTeam": "emmen",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2027-01-10T16:45:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2027-01-11T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-01-11T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-01-15T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-01-15T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2027-01-15T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-01-15T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2027-01-15T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2027-01-16T16:30:00",
+      "homeTeam": "almere",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2027-01-22T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2027-01-22T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2027-01-22T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2027-01-22T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2027-01-23T16:30:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2027-01-25T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-01-25T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2027-01-29T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2027-01-29T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2027-01-29T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-01-29T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2027-01-29T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-02-01T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-02-05T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2027-02-05T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2027-02-05T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-02-05T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2027-02-06T16:30:00",
+      "homeTeam": "volendam",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-02-08T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-02-08T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2027-02-12T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2027-02-12T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2027-02-12T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-02-12T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2027-02-13T16:30:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2027-02-15T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-02-19T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2027-02-19T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-02-19T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2027-02-20T16:30:00",
+      "homeTeam": "helmond",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-02-22T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-02-22T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2027-02-26T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2027-02-26T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2027-02-26T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2027-02-26T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2027-02-26T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-02-26T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2027-02-26T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2027-03-05T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2027-03-05T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-03-05T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2027-03-05T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-03-06T16:30:00",
+      "homeTeam": "roda",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2027-03-07T12:15:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2027-03-12T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2027-03-12T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2027-03-12T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-03-12T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2027-03-13T16:30:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2027-03-15T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-03-19T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2027-03-19T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2027-03-19T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-03-19T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-03-19T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2027-03-19T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2027-04-02T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2027-04-02T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-04-02T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2027-04-02T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2027-04-05T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-04-05T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2027-04-09T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2027-04-09T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2027-04-09T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "helmond",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2027-04-09T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2027-04-09T20:00:00",
+      "homeTeam": "emmen",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Oude Meerdijk"
+    },
+    {
+      "date": "2027-04-11T16:45:00",
+      "homeTeam": "roda",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2027-04-12T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-04-16T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "den-bosch",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-04-16T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-04-16T20:00:00",
+      "homeTeam": "rkc",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Mandemakers Stadion"
+    },
+    {
+      "date": "2027-04-16T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    },
+    {
+      "date": "2027-04-16T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2027-04-19T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-04-23T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2027-04-23T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2027-04-23T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "jong-psv",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2027-04-23T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-04-23T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2027-04-24T16:30:00",
+      "homeTeam": "helmond",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-04-30T20:00:00",
+      "homeTeam": "nac",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Rat Verlegh Stadion"
+    },
+    {
+      "date": "2027-04-30T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2027-04-30T20:00:00",
+      "homeTeam": "vitesse",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GelreDome"
+    },
+    {
+      "date": "2027-05-03T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-05-03T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "dordrecht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2027-05-03T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-05-07T20:00:00",
+      "homeTeam": "almere",
+      "awayTeam": "jong-az",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Yanmar Stadion"
+    },
+    {
+      "date": "2027-05-07T20:00:00",
+      "homeTeam": "helmond",
+      "awayTeam": "vitesse",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "GS Staalwerken Stadion"
+    },
+    {
+      "date": "2027-05-07T20:00:00",
+      "homeTeam": "den-bosch",
+      "awayTeam": "roda",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Stadion De Vliert"
+    },
+    {
+      "date": "2027-05-07T20:00:00",
+      "homeTeam": "fc-eindhoven",
+      "awayTeam": "nac",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Jan Louwers Stadion"
+    },
+    {
+      "date": "2027-05-07T20:00:00",
+      "homeTeam": "volendam",
+      "awayTeam": "maastricht",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Kras Stadion"
+    },
+    {
+      "date": "2027-05-07T20:00:00",
+      "homeTeam": "jong-ajax",
+      "awayTeam": "top-oss",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Sportpark De Toekomst"
+    },
+    {
+      "date": "2027-05-14T20:00:00",
+      "homeTeam": "dordrecht",
+      "awayTeam": "rkc",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "M-Tech Stadion"
+    },
+    {
+      "date": "2027-05-14T20:00:00",
+      "homeTeam": "jong-az",
+      "awayTeam": "jong-ajax",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "AFAS Trainingscomplex"
+    },
+    {
+      "date": "2027-05-14T20:00:00",
+      "homeTeam": "jong-psv",
+      "awayTeam": "emmen",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "PSV Campus De Herdgang"
+    },
+    {
+      "date": "2027-05-14T20:00:00",
+      "homeTeam": "maastricht",
+      "awayTeam": "fc-eindhoven",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "De Geusselt"
+    },
+    {
+      "date": "2027-05-14T20:00:00",
+      "homeTeam": "roda",
+      "awayTeam": "almere",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Parkstad Limburg Stadion"
+    },
+    {
+      "date": "2027-05-14T20:00:00",
+      "homeTeam": "top-oss",
+      "awayTeam": "volendam",
+      "competition": "Keuken Kampioen Divisie",
+      "venue": "Frans Heesen Stadion"
+    }
   ]
 }
